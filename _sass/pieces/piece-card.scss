@@ -91,7 +91,7 @@
   grid-area: button;
   align-self: start;
 
-  @media ((min-width: $sm) and (max-width: $md)) or (min-width: $lg) {
+  @media (((min-width: $sm) and (max-width: $md)) or (min-width: $lg)) {
     max-width: 20rem;
   }
 }
