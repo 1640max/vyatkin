@@ -51,10 +51,10 @@ $indent-xl: 2rem;
 }
 
 .body__padding {
-  padding: 0 $indent;
+  padding-inline: $indent;
 
   @media (min-width: $xl) {
-    padding: 0 $indent-xl;
+    padding-inline: $indent-xl;
   }
 }
 
