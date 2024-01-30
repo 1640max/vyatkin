@@ -1,0 +1,18 @@
+.contacts {
+	display: grid;
+  gap: 1rem;
+}
+
+.contacts__contact {
+  display: grid;
+  gap: .25rem;
+}
+
+.contacts__heading {
+	font: 1.25rem/115% $heading-family;
+  margin: 0;
+}
+
+.contacts__content {
+	margin: 0;
+}
