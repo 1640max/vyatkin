@@ -1,0 +1,21 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hero__photo {
+  border-radius: 999px;
+  width: 7rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.hero__heading {
+  font: 2.5rem/115% $heading-family;
+  margin: 0 0 .75rem 0;
+}
+
+.hero__tagline {
+  font: 1.25rem/135% $default-family;
+  margin: 0;
+}

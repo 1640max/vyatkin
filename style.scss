@@ -23,6 +23,8 @@ $indent-xl: 2rem;
 
 @import "_header";
 @import "_menu";
+@import "_fullscreen";
+@import "_hero";
 @import "pieces/_piece-card";
 @import "pieces/_data";
 @import "pieces/_button";
@@ -30,6 +32,7 @@ $indent-xl: 2rem;
 
 .html {
   font: 400 16px/130% $default-family;
+  height: 100%;
 
   @media (min-width: $xxl) {
     font-size: 24px;
@@ -38,6 +41,7 @@ $indent-xl: 2rem;
 
 .body {
   margin: 0;
+  height: 100%;
 }
 
 .body__margin {
