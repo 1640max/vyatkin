@@ -21,12 +21,12 @@ $default-family: 'Noto Sans', sans-serif;
 $indent: .75rem;
 $indent-xl: 2rem;
 
-@import "_sass/header";
-@import "_sass/menu";
-@import "_sass/pieces/piece-card";
-@import "_sass/pieces/data";
-@import "_sass/pieces/button";
-@import "_sass/pieces/sort-ui";
+@import "_header";
+@import "_menu";
+@import "pieces/_piece-card";
+@import "pieces/_data";
+@import "pieces/_button";
+@import "pieces/_sort-ui";
 
 .html {
   font: 400 16px/130% $default-family;
