@@ -1,0 +1,8 @@
+{% for menu-item in site.data.menu %}
+  {% if page.url == menu-item.path %}
+    <p class="menu__item menu__item_current">{{ menu-item.name }}</p>
+  {% else %}
+    <a    href="{{ menu-item.path }}"
+          class="link link_inverted menu__item">{{ menu-item.name }}</a>
+  {% endif %}
+{% endfor %}
