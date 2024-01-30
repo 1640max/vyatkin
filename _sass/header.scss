@@ -1,0 +1,109 @@
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-template-rows: 5rem auto;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "title burger-button"
+    "menu  menu";
+  
+  background-color: $red;
+  color: white;
+
+  @media (min-width: $md) {
+    grid-template-areas: "title menu";
+    grid-template-columns: auto;
+  }
+}
+
+.header__title {
+  font: 1.2rem $heading-family;
+  margin: 0;
+}
+
+.header__toggle {
+  /* Скрываем чекбокс */
+  display: none;
+}
+
+/* Анимация закрытия */
+.header__menu {
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Анимация открытия */
+#header__toggle:checked ~ .header__menu {
+  /* TODO: сделать нормально через https://css-tricks.com/using-css-transitions-auto-dimensions/ */
+  height: 15rem;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header__burger-button {
+  grid-area: burger-button;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+
+  @media (min-width: $md) {
+    display: none;
+  }
+}
+
+.header__burger-icon,
+.header__burger-icon::before,
+.header__burger-icon::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 3px;
+  width: 2rem;
+  transition: transform 700ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#header__toggle:checked ~ .header__burger-button .header__burger-icon::before {
+  margin-top: 0;
+  transform: rotate(45deg);
+}
+
+#header__toggle:checked ~ .header__burger-button .header__burger-icon {
+  background: rgba(255, 255, 255, 0);
+}
+
+#header__toggle:checked ~ .header__burger-button .header__burger-icon::after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+}
+
+.header__burger-icon::before {
+  content: '';
+  transform: translateY(-.5rem);
+}
+
+.header__burger-icon::after {
+  content: '';
+  transform: translateY(.5rem);
+}
+
+.header__menu {
+  grid-area: menu;
+  justify-self: end;
+  height: 0;
+  overflow: hidden;
+  align-content: start;
+
+  @media (min-width: $md) {
+    grid-auto-flow: column !important;
+    // Раскрываем бургер, расширяем экран. Чтобы не было глюка, нужен !important
+    height: auto !important;
+  }
+
+  @media (max-width: calc($md - 1px)) {
+    > :first-child {
+      /* Отступ от значка бургера */
+      margin-top: 1rem;
+    }
+  }
+}

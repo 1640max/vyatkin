@@ -1,0 +1,27 @@
+.data {
+  display: grid;
+  gap: .5rem 0;
+}
+
+.data__key {
+  color: #000b;
+}
+
+.data__value {
+  padding: 0 0 0 1rem;
+
+  &:only-of-type {
+    /* Рядом с одинокими элементами интервал кажется больше. Компенсируем */
+    margin-top: -0.2rem;
+  }
+
+}
+
+.data_inline {
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+
+  > .data__value {
+    padding-left: .4rem;
+  }
+}

@@ -1,0 +1,72 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Prosto+One&display=swap');
+
+// Брейкпоинты
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$xxxl: 1920px;
+
+$red: #af331a;
+$white: #fff;
+$black: #000;
+
+$heading-family: 'Prosto One', sans-serif;
+$default-family: 'Noto Sans', sans-serif;
+
+$indent: .75rem;
+$indent-xl: 2rem;
+
+@import "header";
+@import "menu";
+@import "pieces/piece-card";
+@import "pieces/data";
+@import "pieces/button";
+@import "pieces/sort-ui";
+
+.html {
+  font: 400 16px/130% $default-family;
+
+  @media (min-width: $xxl) {
+    font-size: 24px;
+  }
+}
+
+.body {
+  margin: 0;
+}
+
+.body__margin {
+  /* width: calc(90% + 5px);
+  margin-right: auto;
+  margin-left: auto; */
+  margin-inline: $indent;
+  @media (min-width: $xl) {
+    margin-inline: $indent-xl;
+  }
+}
+
+.body__padding {
+  padding: 0 $indent;
+
+  @media (min-width: $xl) {
+    padding: 0 $indent-xl;
+  }
+}
+
+.link {
+  color: $red;
+}
+
+.link_inverted {
+  color: $white;
+}
+
+.link-reset {
+  color: inherit;
+  text-decoration: inherit;
+}

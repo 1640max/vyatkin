@@ -1,0 +1,83 @@
+---
+layout: page
+title: Пьесы
+---
+
+<section class="sort-ui sort-ui__self body__margin">
+  <p class="sort-ui__heading">Показать сначала:</p>
+  <ul class="sort-ui__list">
+    <li class="sort-ui__item" id="sort-new">новые</li>
+    <li class="sort-ui__item" id="sort-old">старые</li>
+    <li class="sort-ui__item" id="sort-popular">популярные</li>
+  </ul>
+</section>
+
+<div class="piece-cards body__margin">
+  {% assign pieces-sorted = site.data.pieces | sort: "order" %}
+  {% for piece in pieces-sorted %}
+    <article class="piece-card">
+      <div class="piece-card__header">
+        <div class="piece-card__age">{{ piece.age }}+</div>
+        <div class="delimiter"></div>
+        {% if piece.year %}
+          <div class="piece-card__year">{{ piece.year }} год</div>
+        {% endif %}
+      </div>
+      <header class="piece-card__heading">
+        <h2 class="piece-card__title">{{ piece.title }}</h2>
+        <div class="piece-card__subtitle">{{ piece.subtitle }}</div>
+      </header>
+      <div class="piece-card__description">{{ piece.description }}</div>
+      <div class="delimiter piece-card__delimiter"></div>
+      <div class="piece-card__table">
+        {% if piece.characters %}
+        <div class="data data_inline">
+          <div class="data__key">Персонажей:</div>
+          <div class="data__value">{{ piece.characters }}</div>
+        </div>
+        {% endif %}
+        {% if piece.client %}
+          <div class="data">
+            <div class="data__key">Заказчик:</div>
+            <a class="link data__value" href="{{ client-link }}">{{ piece.client }}</a>
+          </div>
+        {% endif %}
+        {% if piece.rewards.size %}
+          <div class="data">
+            <div class="data__key">Регалии:</div>
+            {% for reward in piece.rewards %}
+              <a class="link data__value" href="{{ reward.link }}">{{ reward.name }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if piece.productions.size %}
+          <div class="data">
+            <div class="data__key">Постановки:</div>
+            {% for production in piece.productions %}
+              <a class="link data__value" href="{{ production.link }}">{{ production.name }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      {% if piece.button-link %}
+        <a class="button link-reset piece-card__button" href="{{ piece.button-link }}">
+          {% if piece.button-text %}
+            {{ piece.button-text }}
+          {% else %}
+            Скачать
+          {% endif %}
+        </a>
+      {% else %}
+        <div class="button button_unactive piece-card__button">
+          {% if piece.button-text %}
+            {{ piece.button-text }}
+          {% else %}
+            Скачать нельзя :(
+          {% endif %}
+        </div>
+      {% endif %}
+      <div class="piece-card__hidden piece-card__order">{{ piece.order }}</div>
+      <div class="piece-card__hidden piece-card__popularity">{{ piece.rewards.size | plus: piece.productions.size }}</div>
+    </article>
+  {% endfor %}
+</div>

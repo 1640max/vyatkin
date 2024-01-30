@@ -1,0 +1,15 @@
+-
+  path: /contacts.html
+  name: Контакты
+-
+  path: /news.html
+  name: Новости
+-
+  path: /about.html
+  name: Обо мне
+-
+  path: /pieces.html
+  name: Пьесы
+-
+  path: /
+  name: Главная
