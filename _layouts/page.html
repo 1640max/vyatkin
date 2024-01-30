@@ -9,7 +9,9 @@
 </head>
 <body class="body">
   
-  {% include header.html %}
+  {% if page.header != false %}
+    {% include header.html %}
+  {% endif %}
 
   {{ content }}
 
