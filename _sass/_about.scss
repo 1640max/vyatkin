@@ -1,7 +1,7 @@
 .about {
 	display: grid;
   grid-auto-flow: row;
-  gap: 1.5rem 5vw;
+  gap: 1.5rem 5rem;
 
   @media (min-width: $md) {
     grid-auto-flow: column;
