@@ -25,7 +25,9 @@ title: Пьесы
       </div>
       <header class="piece-card__heading">
         <h2 class="piece-card__title">{{ piece.title }}</h2>
-        <div class="piece-card__subtitle">{{ piece.subtitle }}</div>
+        {% if piece.subtitle %}
+         <div class="piece-card__subtitle">{{ piece.subtitle }}</div>
+        {% endif %}
       </header>
       <div class="piece-card__description">{{ piece.description }}</div>
       <div class="delimiter piece-card__delimiter"></div>

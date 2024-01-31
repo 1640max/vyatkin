@@ -61,6 +61,11 @@
   margin: 0;
 }
 
+/* Если нет subtitle */
+.piece-card__title:only-child {
+  margin-bottom: -0.4em;
+}
+
 .piece-card__subtitle {
   font: 500 1.25rem/130% $default-family;
 }
