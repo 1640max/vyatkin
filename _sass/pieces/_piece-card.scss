@@ -15,16 +15,6 @@
       "button";
   gap: 1rem 3rem;
 
-/*   @media (min-width: $md) {
-    grid-template-areas:
-      "header       header"
-      "heading      heading"
-      "description  table"
-      "button       table";
-    grid-auto-columns: 1fr;
-    grid-template-rows: repeat(3, auto) 1fr;
-  } */
-
   @media (min-width: $md) {
     grid-template-areas:
       "header       header"
