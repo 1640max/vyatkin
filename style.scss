@@ -26,6 +26,7 @@ $indent-xl: 2rem;
 @import "_fullscreen";
 @import "_hero";
 @import "_contacts";
+@import "_about";
 @import "pieces/_piece-card";
 @import "pieces/_data";
 @import "pieces/_button";
@@ -61,6 +62,12 @@ $indent-xl: 2rem;
   @media (min-width: $xl) {
     padding-inline: $indent-xl;
   }
+}
+
+.body__align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .link {
