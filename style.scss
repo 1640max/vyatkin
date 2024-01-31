@@ -26,10 +26,11 @@ $indent-xl: 2rem;
 @import "_fullscreen";
 @import "_hero";
 @import "_contacts";
+@import "_about";
+@import "pieces/_sort-ui";
 @import "pieces/_piece-card";
 @import "pieces/_data";
 @import "pieces/_button";
-@import "pieces/_sort-ui";
 
 .html {
   font: 400 16px/130% $default-family;
