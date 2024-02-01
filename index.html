@@ -15,8 +15,8 @@ header: false
   </div>
 </header>
 
-<section class="index-content">
-  <section class="index-content__section body__margin">
+<section class="index-content index-content__self">
+  <section class="index-content__text body__margin">
     <h2 class="index-content__heading">
       Работаю для классического, цифрового и сайт-специфик театра
     </h2>
@@ -24,11 +24,12 @@ header: false
       Ко мне обращаются за сценариями для бродилки по океанариуму, последнему троллейбусному маршруту, за пьесами для робота, частных мероприятий и обычной театральной сцены. Ещё, конечно, пишу свои собственные пьесы.
     </p>
   </section>
-  <div class="pieces-demo index-content__pieces">
-    <a class="link pieces-demo__all" href="/pieces.html">смотреть все пьесы</a>
-    <section class="pieces-demo__cards">
+  <section class="index-content__piece-section">
+    <a class="link index-content__pieces-link body__margin" href="/pieces.html">смотреть все пьесы</a>
+    <section class="index-content__piece-cards drag-to-scroll">
 
-      <article class="piece-card">
+      <!-- TODO: Сделай без переиспользования стилей, не натягивай сову на глобус. Жесть же какая-то вышла. -->
+      <article class="piece-card index-content__piece-card">
         <div class="piece-card__header">
           <div class="piece-card__age">0+</div>
           <div class="delimiter"></div>
@@ -37,40 +38,98 @@ header: false
         <header class="piece-card__heading">
           <h3 class="piece-card__title">Двадцать третий год</h3>
         </header>
-        <div class="piece-card__description">
+        <p class="piece-card__description">
           Пьеса-променад для прогулки по Москве 2023 и 1923 годов.
-        </div>
+        </p>
         <div class="delimiter piece-card__delimiter"></div>
         <div class="piece-card__table">
-            <div class="data">
-              <div class="data__key">Заказчик:</div>
-              <a class="link data__value" href="https://mobiletheater.io/">
-                Мобильный художественный театр и Театр им. Маяковского
+          <section class="data">
+            <header class="data__key">Заказчик:</header>
+            <a class="link data__value" href="https://mobiletheater.io/">
+              Мобильный художественный театр и Театр им. Маяковского
+            </a>
+          </section>
+          <section class="data">
+            <header class="data__key">Постановки:</header>
+              <a  class="link data__value"
+                  href="https://oteatre.info/volkostrelov-i-artisty-mayakovki/">
+                  «Двадцать третий год. Маякова и окрестности»
               </a>
-            </div>
-            <div class="data">
-              <div class="data__key">Постановки:</div>
-                <a  class="link data__value"
-                    href="https://oteatre.info/volkostrelov-i-artisty-mayakovki/">
-                    «Двадцать третий год. Маякова и окрестности»
-                </a>
-            </div>
+          </section>
         </div>
         <a  class="button link-reset piece-card__button"
             href="https://mobiletheater.io">
-            Послушать в приложении МХТ (бесплатно)
+            Послушать в приложении МХТ (бесплатно)
+        </a>
+      </article>
+
+      <article class="piece-card index-content__piece-card">
+        <div class="piece-card__header">
+          <div class="piece-card__age">12+</div>
+          <div class="delimiter"></div>
+            <div class="piece-card__year">2020 год</div>
+        </div>
+        <header class="piece-card__heading">
+          <h3 class="piece-card__title">Лучший горох в городе</h3>
+        </header>
+        <p class="piece-card__description">
+          Нежная комедия про наших матерей
+        </p>
+        <div class="delimiter piece-card__delimiter"></div>
+        <div class="piece-card__table">
+          <section class="data">
+            <header class="data__key">Регалии:</header>
+              <a  class="link data__value"
+                  href="https://www.kolyada-theatre.ru/news/obyyavlen-spisok-pobediteley-xx-mezhdunarodnogo-konkursa-dramaturgov-evraziya-2022">
+                  Победитель конкурса драматургов «Евразия 2022»
+              </a>
+              <a  class="link data__value"
+                  href="https://isobytie.tilda.ws/2022#rec199335944">
+                  Победитель конкурса драматургии «Исходное событие&nbsp;— XXI&nbsp;век»&nbsp;— 2022
+              </a>
+              <a  class="link data__value"
+                  href="https://svoy.ompural.ru/dramcontest.php?year=2023">
+                  Лонг-лист драматического конкурса «СВОЙ»&nbsp;2023
+              </a>
+          </section>
+        </div>
+        <!-- TODO: Добавить ссылку -->
+        <a  class="button link-reset piece-card__button"
+            href="">
+            Скачать
+        </a>
+      </article>
+
+      <article class="piece-card index-content__piece-card">
+        <div class="piece-card__header">
+          <div class="piece-card__age">18+</div>
+          <div class="delimiter"></div>
+            <div class="piece-card__year">2021 год</div>
+        </div>
+        <header class="piece-card__heading">
+          <h3 class="piece-card__title">Туть Господь</h3>
+          <p class="piece-card__subtitle">Пародийная комедия для атеистов и колеблющихся</p>
+        </header>
+        <p class="piece-card__description">
+          В гостях у знаменитого блогера сам творец. Туть настроен серьёзно. Туть будет задавать вопросы. Как всегда, самые чёткие вопросы, самые ловкие, самые неудобные, колкие вопросы. Туть их все задаст. Бог ответит.
+        </p>
+        <!-- TODO: Добавить ссылку -->
+        <a  class="button link-reset piece-card__button"
+            href=""
+            style="position: relative; top: -1.7rem">
+            Скачать
         </a>
       </article>
 
     </section>
-  </div>
-  <section class="index-content__section">
+  </section>
+  <section class="index-content__text body__margin">
     <p class="index-content__paragraph">
       Я специализируюсь на комедиях для детской и взрослой аудитории. Особенно хотел бы поработать со сценариями для компьютерных игр и произведениями о естествознании.
     </p>
     <p class="index-content__paragraph">Не страшно, если у вас нет чёткой идеи для сюжета — я предложу на выбор несколько вариантов с учётом ваших пожеланий. Если скоро премьера, и сценарий нужен срочно — это тоже выполнимо.</p>
   </section>
-  <section class="index-content__section">
+  <section class="index-content__text body__margin">
     <h2 class="index-content__heading">
       Также я режиссирую и играю в спектаклях
     </h2>
@@ -78,7 +137,7 @@ header: false
       Поставил аудиоспектакль для Мобильного художественного театра, кукольный для МИРА центра в Суздале и множество спектаклей в рамках Театра им. Алехандро Валенсио. Подробнее о режиссёрских и актёрских работах смотрите на странице обо мне.
     </p>
   </section>
-  <section class="index-content__section">
+  <section class="index-content__text body__margin">
     <h2 class="index-content__heading">
       Пишите, буду рад знакомству
     </h2>

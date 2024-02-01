@@ -1,0 +1,55 @@
+.index-content {
+	display: grid;
+  grid-auto-flow: row;
+  gap: 3rem;
+}
+
+.index-content__self {
+  margin: 4rem 0 0;
+}
+
+.index-content__text {
+	display: grid;
+  grid-auto-flow: row;
+  gap: 0.5rem;
+}
+
+.index-content__heading {
+	font: 1.25rem/115% $heading-family;
+  margin: 0 0 .25rem 0;
+}
+
+.index-content__paragraph {
+	margin: 0;
+}
+
+.index-content__piece-section {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.index-content__pieces-link {
+	
+}
+
+.index-content__piece-cards {
+	display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: unquote("min(80vw, 25rem)");
+  grid-auto-columns: unquote("min(90vw, 25rem)");
+  gap: 1.5rem;
+  align-items: start;
+  justify-content: start; // Иногда отзывы отображаются уже прокрученные
+}
+
+.index-content__piece-card {
+  grid-template-areas:
+      "header"
+      "heading"
+      "description"
+      "delimiter"
+      "table"
+      "button";
+  grid-auto-columns: auto;
+  grid-template-rows: auto;
+}
