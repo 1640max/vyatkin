@@ -21,6 +21,7 @@ $default-family: 'Noto Sans', sans-serif;
 $indent: .75rem;
 $indent-xl: 2rem;
 
+@import "_piece-card";
 @import "_drag-to-scroll";
 @import "_header";
 @import "_menu";
@@ -28,10 +29,9 @@ $indent-xl: 2rem;
 @import "_hero";
 @import "_contacts";
 @import "_about";
-@import "pieces/_sort-ui";
-@import "pieces/_piece-card";
-@import "pieces/_data";
-@import "pieces/_button";
+@import "_sort-ui";
+@import "_data";
+@import "_button";
 
 .html {
   font: 400 16px/130% $default-family;
