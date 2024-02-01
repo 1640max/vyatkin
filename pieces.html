@@ -26,39 +26,39 @@ title: Пьесы
       <header class="piece-card__heading">
         <h2 class="piece-card__title">{{ piece.title }}</h2>
         {% if piece.subtitle %}
-         <div class="piece-card__subtitle">{{ piece.subtitle }}</div>
+         <p class="piece-card__subtitle">{{ piece.subtitle }}</p>
         {% endif %}
       </header>
-      <div class="piece-card__description">{{ piece.description }}</div>
+      <p class="piece-card__description">{{ piece.description }}</p>
       <div class="delimiter piece-card__delimiter"></div>
       <div class="piece-card__table">
         {% if piece.characters %}
-        <div class="data data_inline">
-          <div class="data__key">Персонажей:</div>
+        <section class="data data_inline">
+          <header class="data__key">Персонажей:</header>
           <div class="data__value">{{ piece.characters }}</div>
-        </div>
+        </section>
         {% endif %}
         {% if piece.client %}
-          <div class="data">
-            <div class="data__key">Заказчик:</div>
+          <section class="data">
+            <header class="data__key">Заказчик:</header>
             <a class="link data__value" href="{{ client-link }}">{{ piece.client }}</a>
-          </div>
+          </section>
         {% endif %}
         {% if piece.rewards.size %}
-          <div class="data">
-            <div class="data__key">Регалии:</div>
+          <section class="data">
+            <header class="data__key">Регалии:</header>
             {% for reward in piece.rewards %}
               <a class="link data__value" href="{{ reward.link }}">{{ reward.name }}</a>
             {% endfor %}
-          </div>
+          </section>
         {% endif %}
         {% if piece.productions.size %}
-          <div class="data">
-            <div class="data__key">Постановки:</div>
+          <section class="data">
+            <header class="data__key">Постановки:</header>
             {% for production in piece.productions %}
               <a class="link data__value" href="{{ production.link }}">{{ production.name }}</a>
             {% endfor %}
-          </div>
+          </section>
         {% endif %}
       </div>
       {% if piece.button-link %}

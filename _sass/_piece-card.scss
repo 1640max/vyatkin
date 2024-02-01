@@ -68,12 +68,14 @@
 
 .piece-card__subtitle {
   font: 500 1.25rem/130% $default-family;
+  margin: 0;
 }
 
 .piece-card__description {
   grid-area: description;
   font-size: 1rem;
   font-weight: 400;
+  margin: 0;
 }
 
 .piece-card__table {
