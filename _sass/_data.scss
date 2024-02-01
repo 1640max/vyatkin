@@ -20,6 +20,7 @@
 .data_inline {
   grid-auto-flow: column;
   grid-template-columns: auto 1fr;
+  align-items: baseline;
 
   > .data__value {
     padding-left: .4rem;
