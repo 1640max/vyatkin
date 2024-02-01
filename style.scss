@@ -21,6 +21,7 @@ $default-family: 'Noto Sans', sans-serif;
 $indent: .75rem;
 $indent-xl: 2rem;
 
+@import "_drag-to-scroll";
 @import "_header";
 @import "_menu";
 @import "_fullscreen";
