@@ -41,14 +41,18 @@ title: Пьесы
         {% if piece.client %}
           <section class="data">
             <header class="data__key">Заказчик:</header>
-            <a class="link data__value" href="{{ client-link }}">{{ piece.client }}</a>
+            <a  class="link data__value"
+                href="{{ client-link }}"
+                target="_blank">{{ piece.client }}</a>
           </section>
         {% endif %}
         {% if piece.rewards.size %}
           <section class="data">
             <header class="data__key">Регалии:</header>
             {% for reward in piece.rewards %}
-              <a class="link data__value" href="{{ reward.link }}">{{ reward.name }}</a>
+              <a  class="link data__value"
+                  href="{{ reward.link }}"
+                  target="_blank">{{ reward.name }}</a>
             {% endfor %}
           </section>
         {% endif %}
@@ -56,13 +60,16 @@ title: Пьесы
           <section class="data">
             <header class="data__key">Постановки:</header>
             {% for production in piece.productions %}
-              <a class="link data__value" href="{{ production.link }}">{{ production.name }}</a>
+              <a  class="link data__value"
+                  href="{{ production.link }}"
+                  target="_blank">{{ production.name }}</a>
             {% endfor %}
           </section>
         {% endif %}
       </div>
       {% if piece.button-link %}
-        <a class="button link-reset piece-card__button" href="{{ piece.button-link }}">
+        <a  class="button link-reset piece-card__button"
+            href="{{ piece.button-link }}">
           {% if piece.button-text %}
             {{ piece.button-text }}
           {% else %}
