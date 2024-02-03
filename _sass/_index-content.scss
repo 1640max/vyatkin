@@ -1,7 +1,7 @@
 .index-content {
 	display: grid;
   grid-auto-flow: row;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .index-content__self {
@@ -35,9 +35,9 @@
 .index-content__piece-cards {
 	display: grid;
   grid-auto-flow: column;
-  grid-template-columns: unquote("min(80vw, 25rem)");
-  grid-auto-columns: unquote("min(90vw, 25rem)");
-  gap: 1.5rem;
+  grid-template-columns: unquote("min(75vw, 25rem)");
+  grid-auto-columns: unquote("min(85vw, 25rem)");
+  gap: 2rem;
   align-items: start;
   justify-content: start; // Иногда отзывы отображаются уже прокрученные
 }

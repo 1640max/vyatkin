@@ -88,6 +88,7 @@
 .piece-card__button {
   grid-area: button;
   align-self: start;
+  width: 100%;
 
   @media (min-width: $sm) and (max-width: $md), (min-width: $lg) {
     max-width: 20rem;
