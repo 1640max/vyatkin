@@ -1,7 +1,8 @@
 .fullscreen {
   background-color: $red;
   color: $white;
-  padding-block: 1rem;
+  padding-top: 1rem;
+  padding-bottom: var(--indent);
   min-height: 500px;
   height: 100%;
   box-sizing: border-box;

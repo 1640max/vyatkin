@@ -18,8 +18,13 @@ $black: #000;
 $heading-family: 'Prosto One', sans-serif;
 $default-family: 'Noto Sans', sans-serif;
 
-$indent: .75rem;
-$indent-xl: 2rem;
+:root {
+  --indent: .75rem;
+
+  @media (min-width: $xl) {
+    --indent: 2rem;
+  }
+}
 
 @import "_piece-card";
 @import "_drag-to-scroll";
@@ -52,18 +57,12 @@ $indent-xl: 2rem;
   /* width: calc(90% + 5px);
   margin-right: auto;
   margin-left: auto; */
-  margin-inline: $indent;
-  @media (min-width: $xl) {
-    margin-inline: $indent-xl;
-  }
+
+  margin-inline: var(--indent);
 }
 
 .body__padding {
-  padding-inline: $indent;
-
-  @media (min-width: $xl) {
-    padding-inline: $indent-xl;
-  }
+  padding-inline: var(--indent);
 }
 
 .link {
