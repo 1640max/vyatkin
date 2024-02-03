@@ -6,24 +6,22 @@ header: false
 
 <div class="fullscreen body__padding">
   <div class="fullscreen__container">
-    <div class="title fullscreen__title">{{ site.title }}.<br>{{ page.title }}</div>
+    <h1 class="title fullscreen__title">{{ site.title }}.<br>{{ page.title }}</h1>
     <nav class="menu fullscreen__menu">{% include menu.html %}</nav>
-    <div class="hero fullscreen__content">
-      <section class="contacts">
-        <article class="contacts__contact">
-          <h2 class="contacts__heading">Почтовый адрес:</h2>
-          <p class="contacts__content">ул. Подъёмная д. 14, стр. 25, апп. 304, 109052, г. Москва</p>
-        </article>
-        <article class="contacts__contact">
-          <h2 class="contacts__heading">Телефон:</h2>
-          <p class="contacts__content">+7 915 162-10-63
-          </p>
-        </article>
-        <article class="contacts__contact">
-          <h2 class="contacts__heading">Эл. почта:</h2>
-          <a class="link-inverted contacts__content" href="mailto:petr@vyatkin.su">petr@vyatkin.su</a>
-        </article>
-      </section>
-    </div>
+    <section class="contacts fullscreen__content">
+      <article class="contacts__contact">
+        <h2 class="contacts__heading">Почтовый адрес:</h2>
+        <p class="contacts__content">ул. Подъёмная д. 14, стр. 25, апп. 304, 109052, г. Москва</p>
+      </article>
+      <article class="contacts__contact">
+        <h2 class="contacts__heading">Телефон:</h2>
+        <p class="contacts__content">+7 915 162-10-63
+        </p>
+      </article>
+      <article class="contacts__contact">
+        <h2 class="contacts__heading">Эл. почта:</h2>
+        <a class="link-inverted contacts__content" href="mailto:petr@vyatkin.su">petr@vyatkin.su</a>
+      </article>
+    </section>
   </div>
 </div>

@@ -1,6 +1,6 @@
 .contacts {
 	display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .contacts__contact {
@@ -15,4 +15,17 @@
 
 .contacts__content {
 	margin: 0;
+  opacity: .9;
+}
+
+@media (min-width: $xl) {
+  
+  .contacts__contact {
+    gap: 0;
+  }
+
+  .contacts__heading {
+    font-size: 3rem;
+  }
+
 }
