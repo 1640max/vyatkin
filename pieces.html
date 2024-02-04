@@ -15,7 +15,7 @@ title: Пьесы
 <div class="piece-cards body__margin">
   {% assign pieces-sorted = site.data.pieces | sort: "order" %}
   {% for piece in pieces-sorted %}
-    <article class="piece-card">
+    <article class="piece-card" id="piece-{{ piece.order }}">
       <div class="piece-card__header">
         <div class="piece-card__age">{{ piece.age }}+</div>
         <div class="delimiter"></div>
