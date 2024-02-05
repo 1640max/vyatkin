@@ -15,12 +15,14 @@
   {% if page.header != false %}
     {% include header.html %}
   {% endif %}
-
+  
   {{ content }}
-
-  <footer class="footer">
-    Сайт сделан <a class="link" href="https://vk.com/max1640">Максом</a>
-  </footer>
+  
+  {% if page.footer != false %}
+    <footer class="footer footer__self body__padding">
+      Сайт сделан <a class="link" href="https://vk.com/max1640">Максом</a>
+    </footer>
+  {% endif %}
 
 </body>
 </html>
