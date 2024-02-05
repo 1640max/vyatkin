@@ -32,6 +32,12 @@ title: Пьесы
       <p class="piece-card__description">{{ piece.description }}</p>
       <div class="delimiter piece-card__delimiter"></div>
       <div class="piece-card__table">
+        {% if piece.button-link %}
+          <section class="data data_inline">
+            <header class="data__key">Скачиваний:</header>
+            <div class="data__value" id="piece-{{ piece.order }}-counter"></div>
+          </section>
+        {% endif %}
         {% if piece.characters %}
         <section class="data data_inline">
           <header class="data__key">Персонажей:</header>
@@ -69,7 +75,9 @@ title: Пьесы
       </div>
       {% if piece.button-link %}
         <a  class="button link-reset piece-card__button"
-            href="{{ piece.button-link }}">
+            id="piece-{{ piece.order }}-button"
+            href="{{ piece.button-link }}"
+            target="_blank">
           {% if piece.button-text %}
             {{ piece.button-text }}
           {% else %}
