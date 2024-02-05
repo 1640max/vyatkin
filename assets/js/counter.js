@@ -12,7 +12,7 @@ function updateCounter(linkNumber, responseData) {
 
 // Функция для обработки клика по ссылке
 function handleLinkClick(linkNumber) {
-    const url = 'https://api.counterapi.dev/v1/vyatkin-test2/piece-' + linkNumber + '/up';
+    const url = 'https://api.counterapi.dev/v1/vyatkin.su/piece-' + linkNumber + '/up';
     fetch(url, { method: 'GET' })
       .then(response => response.json())
       .then(data => {
@@ -52,14 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
     return chain.then(() => {
       return new Promise(resolve => {
         setTimeout(() => {
-          const url = `https://api.counterapi.dev/v1/vyatkin-test2/piece-${linkNumber}/`;
+          const url = `https://api.counterapi.dev/v1/vyatkin.su/piece-${linkNumber}/`;
           fetch(url)
             .then(response => {
               if (response.ok) {
                 return response.json();
               } else if (response.status === 400 || response.status === 404) {
                 // В случае "400 Bad request", отправляем команду повышения значения на 1
-                return fetch(`https://api.counterapi.dev/v1/vyatkin-test2/piece-${linkNumber}/up`, { method: 'GET' })
+                return fetch(`https://api.counterapi.dev/v1/vyatkin.su/piece-${linkNumber}/up`, { method: 'GET' })
                   .then(response => response.json());
               } else {
                 throw new Error('Failed to fetch initial counter value');
