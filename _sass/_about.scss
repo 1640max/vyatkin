@@ -13,30 +13,12 @@
   margin-top: 2rem;
 }
 
-.about__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about__photo {
-	border-radius: 999px;
-  width: 8rem;
-  margin-bottom: .5rem;
-}
-
-.about__name {
-  font: 1.25rem $heading-family;
-	margin: 0 0 .1em 0;
-}
-
-.about__tagline {
-	font-weight: 600;
-  margin: 0;
-}
-
 .about__content {
 	max-width: 35em;
-  margin: 0;
+}
+
+.about__header {
+  display: inline;
+  font: 400 1.25rem $heading-family;
 }
 
