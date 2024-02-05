@@ -2,9 +2,6 @@
   path: /contacts.html
   name: Контакты
 -
-  path: /news.html
-  name: Новости
--
   path: /about.html
   name: Обо мне
 -
