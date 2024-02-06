@@ -1,3 +1,12 @@
+---
+---
+
+{% if jekyll.environment == "production" %}
+  const apilink = "https://api.counterapi.dev/v1/vyatkin.su/piece-";
+{% else %}
+  const apilink = "https://api.counterapi.dev/v1/vyatkin-test/piece-";
+{% endif %}
+
 // Сгенерено нейросеткой, куча косячностей
 
 // Функция для обновления значения счетчика
@@ -12,7 +21,7 @@ function updateCounter(linkNumber, responseData) {
 
 // Функция для обработки клика по ссылке
 function handleLinkClick(linkNumber) {
-    const url = 'https://api.counterapi.dev/v1/vyatkin.su/piece-' + linkNumber + '/up';
+    const url = apilink + linkNumber + '/up';
     fetch(url, { method: 'GET' })
       .then(response => response.json())
       .then(data => {
@@ -52,14 +61,14 @@ document.addEventListener('DOMContentLoaded', function () {
     return chain.then(() => {
       return new Promise(resolve => {
         setTimeout(() => {
-          const url = `https://api.counterapi.dev/v1/vyatkin.su/piece-${linkNumber}/`;
+          const url = apilink + linkNumber + '/';
           fetch(url)
             .then(response => {
               if (response.ok) {
                 return response.json();
               } else if (response.status === 400 || response.status === 404) {
                 // В случае "400 Bad request", отправляем команду повышения значения на 1
-                return fetch(`https://api.counterapi.dev/v1/vyatkin.su/piece-${linkNumber}/up`, { method: 'GET' })
+                return fetch(apilink + linkNumber + '/up', { method: 'GET' })
                   .then(response => response.json());
               } else {
                 throw new Error('Failed to fetch initial counter value');
