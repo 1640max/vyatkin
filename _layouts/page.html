@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html class="html" lang="en">
+<html class="html" lang="ru-RU">
 <head>
+  {% if jekyll.environment == "production" %}
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KNPJ3HZ8');</script>
+    <!-- End Google Tag Manager -->
+  {% endif %}
+
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}{% if page.url != '/' %}. {{ page.title }}{% endif %}</title>
+  <title>{% if page.url != '/' %}{{ page.title }} | {% endif %}{{ site.title }} — драматург, режиссёр</title>
+  <meta name="description" content="Пишу пьесы, ставлю спектакли и играю в театре">
+  <meta name="keywords" content="писатель, комедиант, пьесы, спектакль, театр">
+  <link rel="canonical" href="https://vyatkin.su{% if page.url != '/' %}{{ page.url }}{% endif %}">
+  <meta name="copyright" content="Пётр Вяткин">
+  <meta name="language" content="Russian">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Максим Мальцев">
+  <meta name="yandex-verification" content="f7219a7b43b5bdbd" />
+
   <script src="assets/js/sort.js"></script>
   <script src="assets/js/drag-to-scroll.js"></script>
   <script src="assets/js/highlightPiece.js"></script>
   <script src="assets/js/counter.js"></script>
+
 </head>
 <body class="body">
+  {% if jekyll.environment == "production" %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNPJ3HZ8"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  {% endif %}
   
   {% if page.header != false %}
     {% include header.html %}
