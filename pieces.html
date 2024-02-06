@@ -13,7 +13,7 @@ title: Пьесы
 </section>
 
 <div class="piece-cards body__margin">
-  {% assign pieces-sorted = site.data.pieces | sort: "order" %}
+  {% assign pieces-sorted = site.data.pieces %}
   {% for piece in pieces-sorted %}
     <article class="piece-card" id="piece-{{ piece.order }}">
       <div class="piece-card__header">
