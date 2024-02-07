@@ -14,12 +14,10 @@
 }
 
 .sort-ui__list {
+  @extend .list-reset;
   display: flex;
   gap: 1rem;
   margin: 0 0 0 1rem;
-  padding: 0;
-  text-indent: 0;
-  list-style-type: none;
 }
 
 .sort-ui__item {
