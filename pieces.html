@@ -65,15 +65,11 @@ title: Пьесы
         {%- if piece.productions.size %}
           <section class="data">
             <header class="data__key">Постановки:</header>
-            <ul class="list-reset">
-              {%- for production in piece.productions %}
-                <li>
-                  <a  class="link data__value"
-                      href="{{ production.link }}"
-                      target="_blank">{{ production.name }}</a>
-                </li>
-              {%- endfor %}
-          </ul>
+            {%- for production in piece.productions %}
+              <a  class="link data__value"
+                  href="{{ production.link }}"
+                  target="_blank">{{ production.name }}</a>
+            {%- endfor %}
           </section>
         {%- endif %}
       </div>
