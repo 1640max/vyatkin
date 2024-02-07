@@ -1,7 +1,15 @@
 .piece-cards {
-  display: grid;
-  gap: 4rem;
+  /* display: grid;
+  gap: 4rem; */
   transition: opacity 0.3s ease-in-out;
+
+  > * {
+    margin-bottom: 4rem;
+
+    @media (min-width: $xl) {
+      margin-bottom: 6rem;
+    }
+  }
 }
 
 .piece-card {
