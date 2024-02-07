@@ -26,20 +26,6 @@ $default-family: 'Noto Sans', sans-serif;
   }
 }
 
-@import "_piece-card";
-@import "_drag-to-scroll";
-@import "_header";
-@import "_menu";
-@import "_fullscreen";
-@import "_footer";
-@import "_hero";
-@import "_index-content";
-@import "_contacts";
-@import "_about";
-@import "_sort-ui";
-@import "_data";
-@import "_button";
-
 .html {
   font: 400 16px/130% $default-family;
   height: 100%;
@@ -89,3 +75,17 @@ $default-family: 'Noto Sans', sans-serif;
   list-style-type: none;
   text-indent: 0;
 }
+
+@import "_piece-card";
+@import "_drag-to-scroll";
+@import "_header";
+@import "_menu";
+@import "_fullscreen";
+@import "_footer";
+@import "_hero";
+@import "_index-content";
+@import "_contacts";
+@import "_about";
+@import "_sort-ui";
+@import "_data";
+@import "_button";
