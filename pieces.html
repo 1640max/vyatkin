@@ -6,13 +6,13 @@ title: Пьесы
 <section class="sort-ui sort-ui__self body__margin">
   <p class="sort-ui__heading">Показать сначала:</p>
   <ul class="sort-ui__list">
-    <li class="sort-ui__item" id="sort-new">новые</li>
-    <li class="sort-ui__item" id="sort-old">старые</li>
-    <li class="sort-ui__item" id="sort-popular">популярные</li>
+    <li><button class="sort-ui__item" id="sort-new">новые</button></li>
+    <li><button class="sort-ui__item" id="sort-old">старые</button></li>
+    <li><button class="sort-ui__item" id="sort-popular">популярные</button></li>
   </ul>
 </section>
 
-<div class="piece-cards body__margin">
+<section class="piece-cards body__margin">
   {% assign pieces-sorted = site.data.pieces %}
   {% for piece in pieces-sorted %}
     <article class="piece-card" id="piece-{{ piece.order }}">
@@ -146,4 +146,4 @@ title: Пьесы
     </script>
 
   {% endfor %}
-</div>
+</section>
