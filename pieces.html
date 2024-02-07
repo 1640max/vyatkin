@@ -13,86 +13,90 @@ title: Пьесы
 </section>
 
 <section class="piece-cards body__margin">
-  {% assign pieces-sorted = site.data.pieces %}
-  {% for piece in pieces-sorted %}
+  {%- assign pieces-sorted = site.data.pieces %}
+  {%- for piece in pieces-sorted %}
     <article class="piece-card" id="piece-{{ piece.order }}">
       <div class="piece-card__header">
         <div class="piece-card__age">{{ piece.age }}+</div>
         <div class="delimiter"></div>
-        {% if piece.year %}
+        {%- if piece.year %}
           <div class="piece-card__year">{{ piece.year }} год</div>
-        {% endif %}
+        {%- endif %}
       </div>
       <header class="piece-card__heading">
         <h2 class="piece-card__title">{{ piece.title }}</h2>
-        {% if piece.subtitle %}
+        {%- if piece.subtitle %}
          <p class="piece-card__subtitle">{{ piece.subtitle }}</p>
-        {% endif %}
+        {%- endif %}
       </header>
       <p class="piece-card__description">{{ piece.description }}</p>
       <div class="delimiter piece-card__delimiter"></div>
       <div class="piece-card__table">
-        {% if piece.button-link %}
+        {%- if piece.button-link %}
           <section class="data data_inline">
             <header class="data__key">Скачиваний:</header>
             <div class="data__value" id="piece-{{ piece.order }}-counter"></div>
           </section>
-        {% endif %}
-        {% if piece.characters %}
+        {%- endif %}
+        {%- if piece.characters %}
         <section class="data data_inline">
           <header class="data__key">Персонажей:</header>
           <div class="data__value">{{ piece.characters }}</div>
         </section>
-        {% endif %}
-        {% if piece.client %}
+        {%- endif %}
+        {%- if piece.client %}
           <section class="data">
             <header class="data__key">Заказчик:</header>
             <a  class="link data__value"
                 href="{{ piece.client-link }}"
                 target="_blank">{{ piece.client }}</a>
           </section>
-        {% endif %}
-        {% if piece.rewards.size %}
+        {%- endif %}
+        {%- if piece.rewards.size %}
           <section class="data">
             <header class="data__key">Регалии:</header>
-            {% for reward in piece.rewards %}
+            {%- for reward in piece.rewards %}
               <a  class="link data__value"
                   href="{{ reward.link }}"
                   target="_blank">{{ reward.name }}</a>
-            {% endfor %}
+            {%- endfor %}
           </section>
-        {% endif %}
-        {% if piece.productions.size %}
+        {%- endif %}
+        {%- if piece.productions.size %}
           <section class="data">
             <header class="data__key">Постановки:</header>
-            {% for production in piece.productions %}
-              <a  class="link data__value"
-                  href="{{ production.link }}"
-                  target="_blank">{{ production.name }}</a>
-            {% endfor %}
+            <ul class="list-reset">
+              {%- for production in piece.productions %}
+                <li>
+                  <a  class="link data__value"
+                      href="{{ production.link }}"
+                      target="_blank">{{ production.name }}</a>
+                </li>
+              {%- endfor %}
+          </ul>
           </section>
-        {% endif %}
+        {%- endif %}
       </div>
-      {% if piece.button-link %}
+      {%- if piece.button-link %}
         <a  class="button link-reset piece-card__button"
             id="piece-{{ piece.order }}-button"
             href="{{ piece.button-link }}"
             target="_blank">
-          {% if piece.button-text %}
+          {%- if piece.button-text %}
             {{ piece.button-text }}
-          {% else %}
+          {%- else %}
             Скачать
-          {% endif %}
+          {%- endif %}
         </a>
-      {% else %}
+      {%- else %}
         <div class="button button_unactive piece-card__button">
-          {% if piece.button-text %}
+          {%- if piece.button-text %}
             {{ piece.button-text }}
-          {% else %}
+          {%- else %}
             Скачать нельзя :(
-          {% endif %}
+          {%- endif %}
         </div>
-      {% endif %}
+      {%- endif %}
       <div class="piece-card__hidden piece-card__order">{{ piece.order }}</div>
       <div class="piece-card__hidden piece-card__popularity">{{ piece.rewards.size | plus: piece.productions.size }}</div>
     </article>
@@ -101,43 +105,42 @@ title: Пьесы
       {
         "@context": "https://schema.org",
         "@type": "Play",
-
         "name": "{{ piece.title }}{% if piece.subtitle %}. {{ piece.subtitle }}{% endif %}",
         
-        {% if piece.description %}
+        {%- if piece.description %}
         "description": "{{ piece.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '"', '\"' }}",
-        {% endif %}
+        {%- endif %}
 
-        {% if piece.year %}
+        {%- if piece.year %}
         "copyrightYear": "{{ piece.year }}",
-        {% endif %}
+        {%- endif %}
         
-        {% if piece.age %}
+        {%- if piece.age %}
         "typicalAgeRange": "{{ piece.age }}-",
-        {% endif %}
+        {%- endif %}
 
-        {% if piece.button-link %}
+        {%- if piece.button-link %}
         "isAccessibleForFree": "True",
         "url": "{{ piece.button-link }}",
-        {% else %}
+        {%- else %}
         "isAccessibleForFree": "False",
-        {% endif %}
+        {%- endif %}
 
-        {% if piece.client %}
+        {%- if piece.client %}
         "producer": "{{ piece.client }}",
-        {% endif %}
+        {%- endif %}
 
-        {% if piece.rewards.size > 0 %}
+        {%- if piece.rewards.size > 0 %}
         "awards": [
-          {% for reward in piece.rewards %}
+          {%- for reward in piece.rewards %}
           {
             "@type": "Award",
             "name": "{{ reward.name }}",
             "url": "{{ reward.link }}"
           }{% unless forloop.last %},{% endunless %}
-          {% endfor %}
+          {%- endfor %}
         ],
-        {% endif %}
+        {%- endif %}
 
         "copyrightHolder": "Пётр Вяткин",
         "author": "Пётр Вяткин",

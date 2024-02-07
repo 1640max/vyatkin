@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="html" lang="ru-RU">
 <head>
-  {% if jekyll.environment == "production" %}
+  {%- if jekyll.environment == "production" %}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -9,7 +9,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KNPJ3HZ8');</script>
     <!-- End Google Tag Manager -->
-  {% endif %}
+  {%- endif %}
 
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
@@ -31,24 +31,24 @@
 
 </head>
 <body class="body">
-  {% if jekyll.environment == "production" %}
+  {%- if jekyll.environment == "production" %}
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNPJ3HZ8"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-  {% endif %}
+  {%- endif %}
   
-  {% if page.header != false %}
+  {%- if page.header != false %}
     {% include header.html %}
-  {% endif %}
+  {%- endif %}
   
   {{ content }}
   
-  {% if page.footer != false %}
+  {%- if page.footer != false %}
     <footer class="footer footer__self body__padding">
       Сайт сделан <a class="link" href="https://vk.com/max1640" style="color:inherit">Максом</a>
     </footer>
-  {% endif %}
+  {%- endif %}
 
 </body>
 </html>
