@@ -3,7 +3,7 @@ layout: page
 title: Пьесы
 ---
 
-<section class="sort-ui sort-ui__self body__margin">
+<section class="sort-ui sort-ui__self body__margin" aria-label="Сортировка">
   <p class="sort-ui__heading">Показать сначала:</p>
   <ul class="sort-ui__list">
     <li><button class="sort-ui__item" id="sort-new">новые</button></li>
@@ -12,7 +12,7 @@ title: Пьесы
   </ul>
 </section>
 
-<section class="piece-cards body__margin">
+<main class="piece-cards body__margin">
   {%- assign pieces-sorted = site.data.pieces %}
   {%- for piece in pieces-sorted %}
     <article class="piece-card" id="piece-{{ piece.order }}">
@@ -104,38 +104,38 @@ title: Пьесы
         "name": "{{ piece.title }}{% if piece.subtitle %}. {{ piece.subtitle }}{% endif %}",
         
         {%- if piece.description %}
-        "description": "{{ piece.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '"', '\"' }}",
+          "description": "{{ piece.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '"', '\"' }}",
         {%- endif %}
 
         {%- if piece.year %}
-        "copyrightYear": "{{ piece.year }}",
+          "copyrightYear": "{{ piece.year }}",
         {%- endif %}
         
         {%- if piece.age %}
-        "typicalAgeRange": "{{ piece.age }}-",
+          "typicalAgeRange": "{{ piece.age }}-",
         {%- endif %}
 
         {%- if piece.button-link %}
-        "isAccessibleForFree": "True",
-        "url": "{{ piece.button-link }}",
+          "isAccessibleForFree": "True",
+          "url": "{{ piece.button-link }}",
         {%- else %}
-        "isAccessibleForFree": "False",
+          "isAccessibleForFree": "False",
         {%- endif %}
 
         {%- if piece.client %}
-        "producer": "{{ piece.client }}",
+          "producer": "{{ piece.client }}",
         {%- endif %}
 
         {%- if piece.rewards.size > 0 %}
-        "awards": [
-          {%- for reward in piece.rewards %}
-          {
-            "@type": "Award",
-            "name": "{{ reward.name }}",
-            "url": "{{ reward.link }}"
-          }{% unless forloop.last %},{% endunless %}
-          {%- endfor %}
-        ],
+          "awards": [
+            {%- for reward in piece.rewards %}
+              {
+                "@type": "Award",
+                "name": "{{ reward.name }}",
+                "url": "{{ reward.link }}"
+              }{% unless forloop.last %},{% endunless %}
+            {%- endfor %}
+          ],
         {%- endif %}
 
         "copyrightHolder": "Пётр Вяткин",
@@ -145,4 +145,4 @@ title: Пьесы
     </script>
 
   {% endfor %}
-</section>
+</main>

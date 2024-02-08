@@ -9,20 +9,26 @@ footer: false
   <div class="fullscreen__container">
     <h1 class="title fullscreen__title"><a class="link-reset" href="/">{{ site.title }}</a>.<br>{{ page.title }}</h1>
     <nav class="menu fullscreen__menu">{% include menu.html %}</nav>
-    <section class="contacts fullscreen__content">
-      <article class="contacts__contact">
-        <h2 class="contacts__heading">Почтовый адрес:</h2>
-        <p class="contacts__content">ул. Подъёмная д. 14, стр. 25, апп. 304, 109052, г. Москва</p>
-      </article>
-      <article class="contacts__contact">
-        <h2 class="contacts__heading">Телефон:</h2>
-        <p class="contacts__content">+7 915 162-10-63
-        </p>
-      </article>
-      <article class="contacts__contact">
-        <h2 class="contacts__heading">Эл. почта:</h2>
-        <a class="link-inverted contacts__content" href="mailto:pit-rapking@bk.ru">pit-rapking@bk.ru</a>
-      </article>
-    </section>
+    <main class="fullscreen__content">
+      <address class="contacts">
+        <article class="contacts__contact">
+          <h2 class="contacts__heading">Почтовый адрес:</h2>
+          <p class="contacts__content">
+            ул. Подъёмная д. 14, стр. 25, апп. 304, 109052, г. Москва
+          </p>
+        </article>
+        <article class="contacts__contact">
+          <h2 class="contacts__heading">Телефон:</h2>
+          <p class="contacts__content">+7 915 162-10-63</p>
+        </article>
+        <article class="contacts__contact">
+          <h2 class="contacts__heading">Эл. почта:</h2>
+          <a  class="link-inverted contacts__content"
+              href="mailto:pit-rapking@bk.ru">
+            pit-rapking@bk.ru
+          </a>
+        </article>
+      </address>
+    </main>
   </div>
 </div>
