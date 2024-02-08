@@ -31,48 +31,54 @@ title: Пьесы
       </header>
       <p class="piece-card__description">{{ piece.description }}</p>
       <div class="delimiter piece-card__delimiter"></div>
-      <div class="piece-card__table">
+      <dl class="piece-card__table">
         {%- if piece.button-link %}
-          <section class="data data_inline">
-            <header class="data__key">Скачиваний:</header>
-            <div class="data__value" id="piece-{{ piece.order }}-counter"></div>
-          </section>
+          <div class="data data_inline">
+            <dt class="data__key">Скачиваний:</dt>
+            <dd class="data__value" id="piece-{{ piece.order }}-counter"></dd>
+          </div>
         {%- endif %}
         {%- if piece.characters %}
-        <section class="data data_inline">
-          <header class="data__key">Персонажей:</header>
-          <div class="data__value">{{ piece.characters }}</div>
-        </section>
+        <div class="data data_inline">
+          <dt class="data__key">Персонажей:</dt>
+          <dd class="data__value">{{ piece.characters }}</dd>
+        </div>
         {%- endif %}
         {%- if piece.client %}
-          <section class="data">
-            <header class="data__key">Заказчик:</header>
-            <a  class="link data__value"
-                href="{{ piece.client-link }}"
-                target="_blank">{{ piece.client }}</a>
-          </section>
+          <div class="data">
+            <dt class="data__key">Заказчик:</dt>
+            <dd class="data__value">
+              <a  class="link"
+                  href="{{ piece.client-link }}"
+                  target="_blank">{{ piece.client }}</a>
+            </dd>
+          </div>
         {%- endif %}
         {%- if piece.rewards.size %}
-          <section class="data">
-            <header class="data__key">Регалии:</header>
+          <div class="data">
+            <dt class="data__key">Регалии:</dt>
             {%- for reward in piece.rewards %}
-              <a  class="link data__value"
-                  href="{{ reward.link }}"
-                  target="_blank">{{ reward.name }}</a>
+              <dd class="data__value">
+                <a  class="link"
+                    href="{{ reward.link }}"
+                    target="_blank">{{ reward.name }}</a>
+              </dd>
             {%- endfor %}
-          </section>
+          </div>
         {%- endif %}
         {%- if piece.productions.size %}
-          <section class="data">
-            <header class="data__key">Постановки:</header>
+          <div class="data">
+            <dt class="data__key">Постановки:</dt>
             {%- for production in piece.productions %}
-              <a  class="link data__value"
-                  href="{{ production.link }}"
-                  target="_blank">{{ production.name }}</a>
+              <dd class="data__value">
+                <a  class="link"
+                    href="{{ production.link }}"
+                    target="_blank">{{ production.name }}</a>
+              </dd>
             {%- endfor %}
-          </section>
+          </div>
         {%- endif %}
-      </div>
+      </dl>
       {%- if piece.button-link %}
         <a  class="button link-reset piece-card__button"
             id="piece-{{ piece.order }}-button"
