@@ -151,3 +151,31 @@ header: false
     </address>
   </section>
 </main>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Пётр Вяткин",
+    "birthDate": "1991-10-02",
+    "birthPlace": {
+      "@type": "Place",
+      "name": "Москва",
+      "address": "Россия, г. Москва"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Московский государственный институт культуры"
+    },
+    "url": "https://vyatkin.su",
+    "image": "https://vyatkin.su/assets/img/main.jpg",
+    "disambiguatingDescription": "Драматург",
+    "description": "Драматург, режиссёр, актёр. Сооснователь Театра им. Алехадро Валенсио.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Театр им. Алехандро Валенсио"
+    },
+    "email": "{{ site.email }}",
+    "telephone": "{{ site.phone }}"
+  }
+</script>
