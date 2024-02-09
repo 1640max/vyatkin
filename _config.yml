@@ -1,6 +1,8 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Пётр Вяткин" # the name of your site, e.g. ACME Corp.
+email: "pit-rapking@bk.ru"
+phone: "+7 915 162-10-63"
 
 sass:
   sourcemap: never
