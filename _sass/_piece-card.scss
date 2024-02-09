@@ -4,10 +4,10 @@
   transition: opacity 0.3s ease-in-out;
 
   > * {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 
     @media (min-width: $xl) {
-      margin-bottom: 6rem;
+      margin-bottom: 7rem;
     }
   }
 }
