@@ -145,9 +145,11 @@ header: false
       Пишите, буду рад знакомству
     </h2>
     <address class="index-content__paragraph">
-      <a class="link" href="mailto:{{ site.email }}">{{ site.email }}</a><br>
-      <a class="link" href="https://vk.com/p.vyatkin91">https://vk.com/p.vyatkin91</a><br>
-      {{ site.phone }}
+      <ul class="list-reset">
+        <li><a class="link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a class="link" href="https://vk.com/p.vyatkin91">https://vk.com/p.vyatkin91</a></li>
+        <li>{{ site.phone }}</li>
+      </ul>
     </address>
   </section>
 </main>
