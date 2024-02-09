@@ -101,54 +101,53 @@ title: Пьесы
       {%- endif %}
       <div class="piece-card__hidden piece-card__order">{{ piece.order }}</div>
       <div class="piece-card__hidden piece-card__popularity">{{ piece.rewards.size | plus: piece.productions.size }}</div>
+    
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Play",
+          "name": "{{ piece.title }}{% if piece.subtitle %}. {{ piece.subtitle }}{% endif %}",
+          
+          {%- if piece.description %}
+            "description": "{{ piece.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '"', '\"' }}",
+          {%- endif %}
+
+          {%- if piece.year %}
+            "copyrightYear": "{{ piece.year }}",
+          {%- endif %}
+          
+          {%- if piece.age %}
+            "typicalAgeRange": "{{ piece.age }}-",
+          {%- endif %}
+
+          {%- if piece.button-link %}
+            "isAccessibleForFree": "True",
+            "url": "{{ piece.button-link }}",
+          {%- else %}
+            "isAccessibleForFree": "False",
+          {%- endif %}
+
+          {%- if piece.client %}
+            "producer": "{{ piece.client }}",
+          {%- endif %}
+
+          {%- if piece.rewards.size > 0 %}
+            "awards": [
+              {%- for reward in piece.rewards %}
+                {
+                  "@type": "Award",
+                  "name": "{{ reward.name }}",
+                  "url": "{{ reward.link }}"
+                }{% unless forloop.last %},{% endunless %}
+              {%- endfor %}
+            ],
+          {%- endif %}
+
+          "copyrightHolder": "Пётр Вяткин",
+          "author": "Пётр Вяткин",
+          "editor": "Максим Мальцев"
+        }
+      </script>
     </article>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Play",
-        "name": "{{ piece.title }}{% if piece.subtitle %}. {{ piece.subtitle }}{% endif %}",
-        
-        {%- if piece.description %}
-          "description": "{{ piece.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '"', '\"' }}",
-        {%- endif %}
-
-        {%- if piece.year %}
-          "copyrightYear": "{{ piece.year }}",
-        {%- endif %}
-        
-        {%- if piece.age %}
-          "typicalAgeRange": "{{ piece.age }}-",
-        {%- endif %}
-
-        {%- if piece.button-link %}
-          "isAccessibleForFree": "True",
-          "url": "{{ piece.button-link }}",
-        {%- else %}
-          "isAccessibleForFree": "False",
-        {%- endif %}
-
-        {%- if piece.client %}
-          "producer": "{{ piece.client }}",
-        {%- endif %}
-
-        {%- if piece.rewards.size > 0 %}
-          "awards": [
-            {%- for reward in piece.rewards %}
-              {
-                "@type": "Award",
-                "name": "{{ reward.name }}",
-                "url": "{{ reward.link }}"
-              }{% unless forloop.last %},{% endunless %}
-            {%- endfor %}
-          ],
-        {%- endif %}
-
-        "copyrightHolder": "Пётр Вяткин",
-        "author": "Пётр Вяткин",
-        "editor": "Максим Мальцев"
-      }
-    </script>
-
   {% endfor %}
 </main>
