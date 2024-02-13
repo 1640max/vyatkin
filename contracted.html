@@ -1,0 +1,35 @@
+---
+layout: page
+title: Заказные пьесы
+---
+
+<main class="index-content__text body__margin">
+  <p class="index-content__paragraph">
+    На этой странице собраны пьесы, написанные под заказ. Те, что я написал по своей инициативе, смотрите <a class="link" href="/#pieces">здесь</a>.
+  </p>
+</main>
+<section class="index-content__text body__margin">
+  <h2 class="index-content__heading">
+    Работаю для классического, цифрового и сайт-специфик театра
+  </h2>
+  <p class="index-content__paragraph">
+    Ко мне обращаются за сценариями для <a class="link" href="/pieces.html#piece-9">бродилки по океанариуму</a>, последнему <a class="link" href="https://mtmuseum.com/page24297285.html" target="_blank">троллейбусному маршруту</a>, за пьесами <a class="link" href="/pieces.html#piece-11">для робота</a>, частных мероприятий и обычной театральной сцены. Ещё, конечно, пишу свои собственные пьесы.
+  </p>
+</section>
+<section class="index-content__text body__margin">
+  <p class="index-content__paragraph">
+    Я специализируюсь на комедиях для детской и взрослой аудитории. Особенно хотел бы поработать со сценариями для компьютерных игр и произведениями о естествознании.
+  </p>
+  <p class="index-content__paragraph">
+    Не страшно, если у вас нет чёткой идеи для сюжета — я предложу на выбор несколько вариантов с учётом ваших пожеланий. Если скоро премьера, и сценарий нужен срочно — это тоже выполнимо.
+  </p>
+</section>
+
+<div class="piece-cards body__margin">
+  <!-- Заказные минус «Сунгирские охотники» -->
+  {%- for piece in site.data.pieces %}
+    {%- if piece.client and piece.order != 15 %}
+      {%- include piece-card.html piece=piece %}
+    {% endif %}
+  {% endfor %}
+</div>

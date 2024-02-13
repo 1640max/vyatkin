@@ -7,151 +7,35 @@ header: false
   <div class="fullscreen__container">
     <h1 class="title fullscreen__title">{{ site.title }}</h1>
     <nav class="menu fullscreen__menu">{% include menu.html %}</nav>
-    <section class="hero fullscreen__content">
+    <div class="hero fullscreen__content">
       <img class="hero__photo" src="assets/img/main.jpg" alt="Пётр Вяткин">
       <h2 class="hero__heading">Меня зовут<br>Пётр</h2>
       <p class="hero__tagline">Я пишу пьесы, ставлю спектакли<br>и играю в театре</p>
-    </section>
+    </div>
   </div>
 </header>
 
-<main class="index-content index-content__self">
-  <section class="index-content__text body__margin">
-    <h2 class="index-content__heading">
-      Работаю для классического, цифрового и сайт-специфик театра
-    </h2>
-    <p class="index-content__paragraph">
-      Ко мне обращаются за сценариями для <a class="link" href="/pieces.html#piece-9">бродилки по океанариуму</a>, последнему <a class="link" href="https://mtmuseum.com/page24297285.html" target="_blank">троллейбусному маршруту</a>, за пьесами <a class="link" href="/pieces.html#piece-11">для робота</a>, частных мероприятий и обычной театральной сцены. Ещё, конечно, пишу свои собственные пьесы.
-    </p>
-  </section>
-  <section class="index-content__piece-section">
-    <a class="link index-content__pieces-link body__margin" href="/pieces.html">смотреть все пьесы</a>
-    <section class="index-content__piece-cards drag-to-scroll">
+<main class="index-content index-content__self body__margin">
+  <p class="index-content__paragraph">
+    Обязательно <a class="link" href="/contacts.html">сообщите мне</a>, если захотите что-то поставить — я заинтересован в постановках.<br>
+    Также я пишу <a class="link" href="/contracted.html">на заказ</a>.
+  </p>
 
-      <article class="piece-card index-content__piece-card"  style="display: flex; flex-direction: column;">
-        <div class="piece-card__header">
-          <div class="piece-card__age">0+</div>
-          <div class="delimiter"></div>
-          <div class="piece-card__year">2023 год</div>
-        </div>
-        <header class="piece-card__heading">
-          <h3 class="piece-card__title">Двадцать третий год</h3>
-        </header>
-        <p class="piece-card__description">
-          Пьеса-променад для прогулки по Москве 2023 и 1923 годов.
-        </p>
-        <div class="piece-card__table">
-          <section class="data">
-            <header class="data__key">Заказчик:</header>
-            <a  class="link data__value"
-                href="https://mobiletheater.io/"
-                target="_blank">
-              Мобильный художественный театр и Театр им. Маяковского
-            </a>
-          </section>
-          <section class="data">
-            <header class="data__key">Постановки:</header>
-              <a  class="link data__value"
-                  href="https://oteatre.info/volkostrelov-i-artisty-mayakovki/"
-                  target="_blank">
-                  «Двадцать третий год. Маяковка и окрестности»
-              </a>
-          </section>
-        </div>
-        <a  class="button link-reset piece-card__button"
-            href="https://mobiletheater.io/#:~:text=ДВАДЦАТЬ%20ТРЕТИЙ%20ГОД"
-            target="_blank">
-            Послушать в приложении МХТ (бесплатно)
-        </a>
-      </article>
+  <div class="sort-ui sort-ui__self" aria-label="Сортировка">
+    <p class="sort-ui__heading">Показать сначала:</p>
+    <ul class="sort-ui__list">
+      <li><button class="sort-ui__item" id="sort-new">новые</button></li>
+      <li><button class="sort-ui__item" id="sort-old">старые</button></li>
+      <li><button class="sort-ui__item" id="sort-popular">популярные</button></li>
+    </ul>
+  </div>
 
-      <article class="piece-card index-content__piece-card" style="display: flex; flex-direction: column;">
-        <div class="piece-card__header">
-          <div class="piece-card__age">12+</div>
-          <div class="delimiter"></div>
-          <div class="piece-card__year">2020 год</div>
-        </div>
-        <header class="piece-card__heading">
-          <h3 class="piece-card__title">Лучший горох в городе</h3>
-        </header>
-        <p class="piece-card__description">
-          Нежная комедия про наших матерей
-        </p>
-        <div class="piece-card__table">
-          <section class="data">
-            <header class="data__key">Регалии:</header>
-              <a  class="link data__value"
-                  href="https://www.kolyada-theatre.ru/news/obyyavlen-spisok-pobediteley-xx-mezhdunarodnogo-konkursa-dramaturgov-evraziya-2022"
-                  target="_blank">
-                  Победитель конкурса драматургов «Евразия 2022»
-              </a>
-              <a  class="link data__value"
-                  href="https://isobytie.tilda.ws/2022#rec199335944"
-                  target="_blank">
-                  Победитель конкурса драматургии «Исходное событие&nbsp;— XXI&nbsp;век»&nbsp;— 2022
-              </a>
-              <a  class="link data__value"
-                  href="https://svoy.ompural.ru/dramcontest.php?year=2023"
-                  target="_blank">
-                  Лонг-лист драматического конкурса «СВОЙ»&nbsp;2023
-              </a>
-          </section>
-        </div>
-        <a  class="button link-reset piece-card__button"
-            href="/assets/pieces/Лучший%20горох%20в%20городе%20Пётр%20Вяткин%202021.docx">
-            Скачать
-        </a>
-      </article>
-
-      <article class="piece-card index-content__piece-card" style="display: flex; flex-direction: column;">
-        <div class="piece-card__header">
-          <div class="piece-card__age">18+</div>
-          <div class="delimiter"></div>
-          <div class="piece-card__year">2021 год</div>
-        </div>
-        <header class="piece-card__heading">
-          <h3 class="piece-card__title">Туть Господь</h3>
-          <p class="piece-card__subtitle">Пародийная комедия для атеистов и колеблющихся</p>
-        </header>
-        <p class="piece-card__description">
-          В гостях у знаменитого блогера сам творец. Туть настроен серьёзно. Туть будет задавать вопросы. Как всегда, самые чёткие вопросы, самые ловкие, самые неудобные, колкие вопросы. Туть их все задаст. Бог ответит.
-        </p>
-        <a  class="button link-reset piece-card__button"
-            href="/assets/pieces/Туть%20Господь%20Пётр%20Вяткин%202021.docx">
-            Скачать
-        </a>
-      </article>
-
-    </section>
-  </section>
-  <section class="index-content__text body__margin">
-    <p class="index-content__paragraph">
-      Я специализируюсь на комедиях для детской и взрослой аудитории. Особенно хотел бы поработать со сценариями для компьютерных игр и произведениями о естествознании.
-    </p>
-    <p class="index-content__paragraph">
-      Не страшно, если у вас нет чёткой идеи для сюжета — я предложу на выбор несколько вариантов с учётом ваших пожеланий. Если скоро премьера, и сценарий нужен срочно — это тоже выполнимо.
-    </p>
-  </section>
-  <section class="index-content__text body__margin">
-    <h2 class="index-content__heading">
-      Также я режиссирую и играю в спектаклях
-    </h2>
-    <p class="index-content__paragraph">
-      Поставил аудиоспектакль для <a href="https://mobiletheater.io" class="link">Мобильного художественного театра</a>, кукольный для <a href="https://myra.ru" class="link">МИРА центра</a> в Суздале и множество спектаклей в рамках <a href="https://valensio.com" class="link">Театра им. Алехандро Валенсио</a>. Подробнее о режиссёрских и актёрских работах смотрите на странице <a href="/about.html" class="link">обо мне</a>.
-    </p>
-  </section>
-  <section class="index-content__text body__margin">
-    <h2 class="index-content__heading">
-      Пишите, буду рад знакомству
-    </h2>
-    <address class="index-content__paragraph">
-      <ul class="list-reset">
-        <li><a class="link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li><a class="link" href="https://vk.com/p.vyatkin91">https://vk.com/p.vyatkin91</a></li>
-        <li>{{ site.phone }}</li>
-      </ul>
-    </address>
-  </section>
+  <!-- Не заказные + «Сунгирские охотники» -->
+  {%- for piece in site.data.pieces %}
+    {%- unless piece.client and piece.order != 15 %}
+      {%- include piece-card.html piece=piece %}
+    {% endunless %}
+  {% endfor %}
 </main>
 
 <script type="application/ld+json">

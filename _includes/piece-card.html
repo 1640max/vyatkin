@@ -1,0 +1,134 @@
+<article class="piece-card" id="piece-{{ piece.order }}">
+  <div class="piece-card__header">
+    <div class="piece-card__age">{{ piece.age }}+</div>
+    <div class="delimiter"></div>
+    {%- if piece.year %}
+      <div class="piece-card__year">{{ piece.year }} год</div>
+    {%- endif %}
+  </div>
+  <header class="piece-card__heading">
+    <h2 class="piece-card__title">{{ piece.title }}</h2>
+    {%- if piece.subtitle %}
+    <p class="piece-card__subtitle">{{ piece.subtitle }}</p>
+    {%- endif %}
+  </header>
+  <p class="piece-card__description">{{ piece.description }}</p>
+  <div class="delimiter piece-card__delimiter"></div>
+  <dl class="piece-card__table">
+    {%- if piece.button-link %}
+      <div class="data data_inline">
+        <dt class="data__key">Скачиваний:</dt>
+        <dd class="data__value" id="piece-{{ piece.order }}-counter"></dd>
+      </div>
+    {%- endif %}
+    {%- if piece.characters %}
+    <div class="data data_inline">
+      <dt class="data__key">Персонажей:</dt>
+      <dd class="data__value">{{ piece.characters }}</dd>
+    </div>
+    {%- endif %}
+    {%- if piece.client %}
+      <div class="data">
+        <dt class="data__key">Заказчик:</dt>
+        <dd class="data__value">
+          <a  class="link"
+              href="{{ piece.client-link }}"
+              target="_blank">{{ piece.client }}</a>
+        </dd>
+      </div>
+    {%- endif %}
+    {%- if piece.rewards.size %}
+      <div class="data">
+        <dt class="data__key">Регалии:</dt>
+        {%- for reward in piece.rewards %}
+          <dd class="data__value">
+            <a  class="link"
+                href="{{ reward.link }}"
+                target="_blank">{{ reward.name }}</a>
+          </dd>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+    {%- if piece.productions.size %}
+      <div class="data">
+        <dt class="data__key">Постановки:</dt>
+        {%- for production in piece.productions %}
+          <dd class="data__value">
+            <a  class="link"
+                href="{{ production.link }}"
+                target="_blank">{{ production.name }}</a>
+          </dd>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+  </dl>
+  {%- if piece.button-link %}
+    <a  class="button link-reset piece-card__button"
+        id="piece-{{ piece.order }}-button"
+        href="{{ piece.button-link }}"
+        target="_blank">
+      {%- if piece.button-text %}
+        {{ piece.button-text }}
+      {%- else %}
+        Скачать
+      {%- endif %}
+    </a>
+  {%- else %}
+    <div class="button button_unactive piece-card__button">
+      {%- if piece.button-text %}
+        {{ piece.button-text }}
+      {%- else %}
+        Скачать нельзя :(
+      {%- endif %}
+    </div>
+  {%- endif %}
+  <div class="piece-card__hidden piece-card__order">{{ piece.order }}</div>
+  <div class="piece-card__hidden piece-card__popularity">{{ piece.rewards.size | plus: piece.productions.size }}</div>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Play",
+      "name": "{{ piece.title }}{% if piece.subtitle %}. {{ piece.subtitle }}{% endif %}",
+      
+      {%- if piece.description %}
+        "description": "{{ piece.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '"', '\"' }}",
+      {%- endif %}
+
+      {%- if piece.year %}
+        "copyrightYear": "{{ piece.year }}",
+      {%- endif %}
+      
+      {%- if piece.age %}
+        "typicalAgeRange": "{{ piece.age }}-",
+      {%- endif %}
+
+      {%- if piece.button-link %}
+        "isAccessibleForFree": "True",
+        "url": "{{ piece.button-link }}",
+      {%- else %}
+        "isAccessibleForFree": "False",
+      {%- endif %}
+
+      {%- if piece.client %}
+        "producer": "{{ piece.client }}",
+      {%- endif %}
+
+      {%- if piece.rewards.size > 0 %}
+        "awards": [
+          {%- for reward in piece.rewards %}
+            {
+              "@type": "Award",
+              "name": "{{ reward.name }}",
+              "url": "{{ reward.link }}"
+            }{% unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        ],
+      {%- endif %}
+
+      "copyrightHolder": "Пётр Вяткин",
+      "author": "Пётр Вяткин",
+      "editor": "Максим Мальцев"
+    }
+  </script>
+</article>

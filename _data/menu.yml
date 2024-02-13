@@ -5,8 +5,8 @@
   path: /about.html
   name: Обо мне
 -
-  path: /pieces.html
-  name: Пьесы
+  path: /contracted.html
+  name: Заказные пьесы
 -
   path: /
   name: Главная
