@@ -1,16 +1,16 @@
 -
   title: Лучший горох в городе
   subtitle: Нежная комедия про наших матерей
-  age: 16
+  age: 16 # Возрастное ограничение
   year: 2021
-  order: 7
-  characters: 2
+  order: 7 # Какой по порядку была написана пьеса
+  characters: 2 # Количество персонажей
   description: |
     В этой пьесе взрослый мужчина будет по телефонной связи 60 минут слушать мать. И если это не глубинная метафора жизни всего моего поколения, то я просто не знаю, что может быть глубже.
   button-link: /assets/pieces/Лучший%20горох%20в%20городе%20Пётр%20Вяткин%202021.docx
-  client:
+  client: # Заказчик
   client-link:
-  rewards:
+  rewards:  # Регалии
     -
       name: Победитель конкурса драматургов «Евразия 2022»
       link: https://www.kolyada-theatre.ru/news/obyyavlen-spisok-pobediteley-xx-mezhdunarodnogo-konkursa-dramaturgov-evraziya-2022
@@ -26,11 +26,11 @@
     -
       name: Особо отмеченная на «Любимовке-2022»
       link: https://lubimovka.art/library?festival=2022&program=3
-  productions:
+  productions: # Постановки
     -
       name: Театр Les Partisans, реж. Павел Зорин
       link: https://uralcult.ru/hronika-festivalya-laquo-kolyada-plays-raquo-157304
-  publications:
+  publications: # Публикации
     -
       name: Журнал «Драмтеатр» № 7. 2022. стр. 84
       link: https://dramteatr-zhurnal.ru/about/#book7_84
@@ -90,12 +90,12 @@
       link: https://oteatre.info/pesu-petra-vyatkina-v-izhevske/
 -
   title: Двадцать тысяч льё под водой
-  subtitle:
+  subtitle: Приключенческий спектакль для прослушивания в океанариуме
   age: 12
   year: 2021
   order: 9
   characters:
-  description: Приключенческий мобильный спектакль для прослушивания в океанариуме. По одноимённому роману Жюля Верна.
+  description:
   button-link: https://mobiletheater.io/#:~:text=%D0%A2%D0%90%D0%99%D0%9D%D0%90%20%D0%9D%D0%90%D0%A3%D0%A2%D0%98%D0%9B%D0%A3%D0%A1%D0%90
   button-text: Послушать в приложении МХТ (бесплатно)
   client: Мобильный художественный театр и Крокус Океанариум
@@ -107,12 +107,12 @@
       link: https://oteatre.info/tajna-nautilusa/
 -
   title: Троллейбус желаний
-  subtitle:
+  subtitle: Аудиоспектакль для последнего троллейбуса
   age: 12
   year: 2021
   order: 10
   characters: 
-  description: Аудиоспектакль для последнего троллейбуса
+  description:
   button-link: 
   client: Импресарио Фёдор Елютин
   client-link: https://wowwowwow.ru/
@@ -151,12 +151,12 @@
       link: https://vk.com/wall-172051295_369
 -
   title: Приятного аппетита, Земляне!
-  subtitle:
+  subtitle: Комедийная монодрама для аудио-гастрономического ивента
   age: 16
   year: 2023
   order: 18
   characters:
-  description: Комедийная монодрама для аудио-гастрономического ивента.
+  description: 
   button-link:
   client: Яндекс Go
   client-link:
@@ -198,12 +198,12 @@
   productions:
 -
   title: Двадцать третий год
-  subtitle:
+  subtitle: Пьеса-променад для прогулки по Москве 2023 и 1923 годов.
   age: 12
   year: 2023
   order: 17
   characters:
-  description: Пьеса-променад для прогулки по Москве 2023 и 1923 годов.
+  description:
   button-link: https://mobiletheater.io/#:~:text=ДВАДЦАТЬ%20ТРЕТИЙ%20ГОД
   button-text: Послушать в приложении МХТ (бесплатно)
   client: Мобильный художественный театр и Театр им. Маяковского
@@ -272,17 +272,17 @@
 -
   title: Я перестаю дышать
   subtitle: Трагикомедия про театральных критиков
-  age: 16 # Возрастное ограничение
+  age: 16
   year: 2018
-  order: 1 # Какой по порядку была написана пьеса
-  characters: 4 # Количество персонажей
+  order: 1
+  characters: 4
   description: |
     Три критика с принципиально разными взглядами на театр должны у нас на глазах решить: кто из них достоин жить, а кто умрёт. А всё из-за сумасшедшего, но безусловно гениального режиссёра.
   button-link: /assets/pieces/Я%20перестаю%20дышать%20Пётр%20Вяткин%202018.docx
-  client: # Написана по заказу
+  client:
   client-link:
-  rewards: # Регалии
-  productions: # Постановки
+  rewards:
+  productions:
     -
       name: Театр им. Алехандро Валенсио, реж. П. Вяткин
       link: https://valensio.com/breathe
@@ -351,12 +351,12 @@
   productions:
 -
   title: Тайна старого дома
-  subtitle:
+  subtitle: Волшебная драма для спектакля бродилки
   age: 0
   year: 2023
   order: 19
   characters:
-  description: Волшебная драма для спектакля бродилки
+  description:
   button-link:
   client: Центр театрального мастерства в Нижнем Новгороде
   client-link: https://ctm-nn.ru/
