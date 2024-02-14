@@ -28,12 +28,16 @@
     </div>
     {%- endif %}
     {%- if piece.client %}
-      <div class="data">
-        <dt class="data__key">Заказчик:</dt>
-        <dd class="data__value">
+    <div class="data">
+      <dt class="data__key">Заказчик:</dt>
+      <dd class="data__value">
+        {%- if piece.client-link %}
           <a  class="link"
-              href="{{ piece.client-link }}"
-              target="_blank">{{ piece.client }}</a>
+          href="{{ piece.client-link }}"
+          target="_blank">{{ piece.client }}</a>
+        {%- else %}
+          {{ piece.client }}
+        {%- endif %}
         </dd>
       </div>
     {%- endif %}
