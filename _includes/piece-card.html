@@ -12,7 +12,9 @@
     <p class="piece-card__subtitle">{{ piece.subtitle }}</p>
     {%- endif %}
   </header>
-  <p class="piece-card__description">{{ piece.description }}</p>
+  <p class="piece-card__description piece-card__description_fold">
+    {{ piece.description | newline_to_br }}
+  </p>
   <div class="delimiter piece-card__delimiter"></div>
   <dl class="piece-card__table">
     {%- if piece.button-link %}
