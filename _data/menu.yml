@@ -1,12 +1,13 @@
 -
-  path: /contacts.html
-  name: Контакты
--
   path: /about.html
   name: Обо мне
 -
-  path: /contracted.html
-  name: Заказные пьесы
+  path: /contacts.html
+  name: Контакты
+
 -
-  path: /
-  name: Главная
+  path: /pieces.html
+  name: Мои пьесы
+-
+  path: /contracted.html
+  name: Пьесы на заказ
