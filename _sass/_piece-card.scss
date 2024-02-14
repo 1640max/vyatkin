@@ -22,7 +22,7 @@
   gap: 1rem 3rem;
   transition: background-color 0.5s linear;
   background-color: $grey;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem 1.5rem;
   border-radius: .5rem;
 
   @media (min-width: $md) {
@@ -43,10 +43,10 @@
 .piece-card__header {
   grid-area: header;
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: .5rem;
+  grid-auto-flow: column;
   color: #5E5E5E;
+  justify-content: space-between;
+  margin-bottom: -.3rem;
 }
 
 .delimiter {
