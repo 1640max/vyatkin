@@ -91,6 +91,33 @@
   margin: 0;
 }
 
+.piece-card__description_fold {
+  position: relative;
+  max-height: 5em;
+  overflow: hidden;
+}
+
+.piece-card__description_fold::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-image: linear-gradient(0, $grey 0%, #{$grey}bf 50%,#{$grey}#{0}#{0} 100%);
+}
+
+/* @media (min-width: $lg) {
+
+  .piece-card__description_fold {
+    max-height: none;
+  }
+
+  .piece-card__description_fold::after {
+    display: none;
+  }
+} */
+
 .piece-card__table {
   grid-area: table;
   align-self: start;
