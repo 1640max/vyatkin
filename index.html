@@ -15,13 +15,17 @@ header: false
   </div>
 </header>
 
-<main class="index-content index-content__self body__margin">
-  <p class="index-content__paragraph">
-    Обязательно <a class="link" href="/contacts.html">сообщите мне</a>, если захотите что-то поставить — я заинтересован в постановках.<br>
-    Также я пишу <a class="link" href="/contracted.html">на заказ</a>.
-  </p>
+<main class="text text__mt body__margin">
+  <div class="text__text-block">
+    <p class="text__paragraph">
+      Здесь опубликованы мои пьесы. Если захотите что-то поставить, <a class="link" href="/contacts.html">сообщите мне</a> — я заинтересован в постановках.
+    </p>
+    <p class="text__paragraph">
+      Также я пишу на заказ. Примеры таких работ на странице с <a class="link" href="/contracted.html">заказными пьесами</a>.
+    </p>
+  </div>
 
-  <div class="sort-ui sort-ui__self" aria-label="Сортировка">
+  <div class="sort-ui text__sort" aria-label="Сортировка">
     <p class="sort-ui__heading">Показать сначала:</p>
     <ul class="sort-ui__list">
       <li><button class="sort-ui__item" id="sort-new">новые</button></li>
@@ -31,11 +35,13 @@ header: false
   </div>
 
   <!-- Не заказные + «Сунгирские охотники» -->
+  <div class="piece-cards">
   {%- for piece in site.data.pieces %}
     {%- unless piece.client and piece.order != 15 %}
       {%- include piece-card.html piece=piece %}
     {% endunless %}
   {% endfor %}
+  </div>
 </main>
 
 <script type="application/ld+json">
