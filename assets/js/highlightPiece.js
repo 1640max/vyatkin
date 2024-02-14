@@ -4,11 +4,9 @@ function highlightPiece() {
   var hash = window.location.hash;
 
   // Проверяем, что хэш не пустой и начинается с "#"
-  if (hash && hash.startsWith("#")) {
+  if (hash.startsWith("#piece-")) {
     // Убираем символ "#" из хэша
     var targetId = hash.slice(1);
-
-    if (!targetId.startsWith("piece-")) return;
 
     // Находим целевой блок по id
     var targetBlock = document.getElementById(targetId);
@@ -28,3 +26,4 @@ function highlightPiece() {
 
 // Вызываем функцию при загрузке страницы
 document.addEventListener('DOMContentLoaded', highlightPiece);
+window.addEventListener('hashchange', highlightPiece);
