@@ -42,10 +42,6 @@ $default-family: 'Noto Sans', sans-serif;
 }
 
 .body__margin {
-  /* width: calc(90% + 5px);
-  margin-right: auto;
-  margin-left: auto; */
-
   margin-inline: var(--indent);
 }
 
@@ -78,7 +74,6 @@ $default-family: 'Noto Sans', sans-serif;
 }
 
 @import "_piece-card";
-@import "_drag-to-scroll";
 @import "_header";
 @import "_menu";
 @import "_fullscreen";

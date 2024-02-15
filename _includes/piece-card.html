@@ -1,20 +1,20 @@
 <article class="piece-card" id="piece-{{ piece.order }}">
-  <div class="piece-card__header">
+  <div class="piece-card__top">
     <div class="piece-card__age">{{ piece.age }}+</div>
     {%- if piece.year %}
       <div class="piece-card__year">{{ piece.year }} год</div>
     {%- endif %}
   </div>
-  <header class="piece-card__heading">
+  <header class="piece-card__header">
     <h2 class="piece-card__title">{{ piece.title }}</h2>
     {%- if piece.subtitle %}
     <p class="piece-card__subtitle">{{ piece.subtitle }}</p>
     {%- endif %}
   </header>
   <p class="piece-card__description piece-card__description_fold">
-    {{ piece.description | newline_to_br }}
+    {{ piece.description | newline_to_br | replace: '<br />', '<br>' }}
   </p>
-  <div class="delimiter piece-card__delimiter"></div>
+  <div class="piece-card__delimiter"></div>
   <dl class="piece-card__table">
     {%- if piece.button-link %}
       <div class="data data_inline">

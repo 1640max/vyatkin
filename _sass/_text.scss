@@ -26,34 +26,3 @@
 .text__sort {
   margin: -1rem 0 2.5rem;
 }
-
-/* .text__piece-section {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.text__pieces-link {
-	
-}
-
-.text__piece-cards {
-	display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: unquote("min(75vw, 25rem)");
-  grid-auto-columns: unquote("min(85vw, 25rem)");
-  gap: 2rem;
-  align-items: start;
-  justify-content: start; // Иногда отзывы отображаются уже прокрученные
-}
-
-.text__piece-card {
-  grid-template-areas:
-      "header"
-      "heading"
-      "description"
-      "delimiter"
-      "table"
-      "button";
-  grid-auto-columns: auto;
-  grid-template-rows: auto;
-} */

@@ -13,8 +13,8 @@
 .piece-card {
   display: grid;
   grid-template-areas:
+      "top"
       "header"
-      "heading"
       "description"
       "delimiter"
       "table"
@@ -27,8 +27,8 @@
 
   @media (min-width: $md) {
     grid-template-areas:
-      "header       header"
-      "heading      table"
+      "top          top"
+      "header      table"
       "description  table"
       "button       table";
     grid-auto-columns: 1fr;
@@ -40,8 +40,8 @@
   background-color: #ffa;
 }
 
-.piece-card__header {
-  grid-area: header;
+.piece-card__top {
+  grid-area: top;
   display: grid;
   grid-auto-flow: column;
   color: #5E5E5E;
@@ -49,21 +49,18 @@
   margin-bottom: -.3rem;
 }
 
-.delimiter {
-  height: 0;
-  border: .5px solid #0005;
-}
-
 .piece-card__delimiter {
   grid-area: delimiter;
+  height: 0;
+  border: .5px solid #0005;
 
   @media (min-width: $md) {
     display: none;
   }
 }
 
-.piece-card__heading {
-  grid-area: heading;
+.piece-card__header {
+  grid-area: header;
   display: grid;
   gap: .25rem
 }
