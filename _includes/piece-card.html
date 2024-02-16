@@ -1,9 +1,11 @@
 <article class="piece-card" id="piece-{{ piece.order }}">
   <div class="piece-card__top">
-    <div class="piece-card__age">{{ piece.age }}+</div>
-    {%- if piece.year %}
-      <div class="piece-card__year">{{ piece.year }} год</div>
-    {%- endif %}
+    <div class="piece-card__age">
+      {{ piece.age }}+
+    </div>
+    <time class="piece-card__year" datetime="{{ piece.year }}">
+      {{ piece.year }} год
+    </time>
   </div>
   <header class="piece-card__header">
     <h2 class="piece-card__title">{{ piece.title }}</h2>
