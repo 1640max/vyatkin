@@ -1,14 +1,19 @@
 .data {
-  display: grid;
-  gap: .5rem 0;
+
 }
 
 .data__key {
   color: #000b;
+  margin: 0 0 .5rem;
 }
 
 .data__value {
-  margin: 0 0 0 1rem;
+  display: block;
+  margin: 0 0 .5rem 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:only-of-type {
     /* Рядом с одинокими элементами интервал кажется больше. Компенсируем */
@@ -18,11 +23,11 @@
 }
 
 .data_inline {
-  grid-auto-flow: column;
-  grid-template-columns: auto 1fr;
-  align-items: baseline;
 
-  > .data__value {
-    margin-left: .4rem;
+  .data__key,
+  .data__value {
+    display: inline;
+    margin: 0;
   }
+
 }
