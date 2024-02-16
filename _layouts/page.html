@@ -17,14 +17,14 @@
   <title>{% if page.url != '/' %}{{ page.title }} | {% endif %}{{ site.title }} — драматург, режиссёр</title>
   <meta name="description" content="Пишу пьесы, ставлю спектакли и играю в театре">
   <meta name="keywords" content="писатель, комедиант, пьесы, спектакль, театр">
-  <link rel="canonical" href="https://vyatkin.su{% if page.url != '/' %}{{ page.url }}{% endif %}">
+  <link rel="canonical" href="{{ site.url }}{% if page.url != '/' %}{{ page.url }}{% endif %}">
   <meta name="copyright" content="Пётр Вяткин">
   <meta name="language" content="Russian">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Максим Мальцев">
   <meta name="yandex-verification" content="f7219a7b43b5bdbd">
   <meta http-equiv="Cache-Control" content="no-cache">
-  <link rel="icon" href="https://vyatkin.su/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
 
   <script defer src="assets/js/sort.js"></script>
   <script defer src="assets/js/highlightPiece.js"></script>
