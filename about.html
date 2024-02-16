@@ -6,7 +6,7 @@ title: Обо мне
 <article class="about about__self body__margin ">
   <div class="about__content">
     <p class="paragraph">Родился 2 октября 1991 года. Живу в Москве.</p>
-    <p class="paragraph">В 2013 закончил МГУКИ как актёр театра и кино, а в 2015 как магистр театрального искусства.</p>
+    <p class="paragraph">В 2013 закончил МГУКИ (МГИК) как актёр театра и кино, а в 2015 как магистр театрального искусства.</p>
     <p class="paragraph">С 2014 актёр театра «Бенефис».</p>
     <p class="paragraph">В 2015 вместе с Виталием Таныгиным основал Театр им. Алехандро Валенсио.</p>
     <p class="paragraph">C 2018 года драматург.</p>
@@ -37,3 +37,32 @@ title: Обо мне
     </details>
   </div>
 </article>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Пётр Вяткин",
+    "birthDate": "1991-10-02",
+    "birthPlace": {
+      "@type": "Place",
+      "name": "Москва",
+      "address": "Россия, г. Москва"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "МГИК"
+    },
+    "url": "https://vyatkin.su",
+    "image": "https://vyatkin.su/assets/img/main.jpg",
+    "disambiguatingDescription": "Драматург",
+    "description": "Драматург, режиссёр, актёр. Сооснователь Театра им. Алехадро Валенсио.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Театр им. Алехандро Валенсио",
+      "url": "https://valensio.com"
+    },
+    "email": "{{ site.email }}",
+    "telephone": "{{ site.phone }}"
+  }
+</script>
