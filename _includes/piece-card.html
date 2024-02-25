@@ -17,7 +17,7 @@
     {{ piece.description | newline_to_br | replace: '<br />', '<br>' }}
   </p>
   <div class="piece-card__delimiter"></div>
-  <dl class="piece-card__table">
+  <dl class="piece-card__table" role="list">
     {%- if piece.button-link %}
       <div class="data data_inline">
         <dt class="data__key">Скачиваний:</dt>
