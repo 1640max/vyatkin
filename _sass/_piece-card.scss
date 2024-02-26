@@ -49,14 +49,9 @@
   margin-bottom: -.3rem;
 }
 
-.piece-card__delimiter {
-  grid-area: delimiter;
-  height: 0;
-  border: .5px solid #0005;
-
-  @media (min-width: $md) {
-    display: none;
-  }
+.piece-card__age,
+.piece-card__year {
+  margin: 0;
 }
 
 .piece-card__header {
@@ -114,6 +109,16 @@
     display: none;
   }
 } */
+
+.piece-card__delimiter {
+  grid-area: delimiter;
+  height: 0;
+  border: .5px solid #0005;
+
+  @media (min-width: $md) {
+    display: none;
+  }
+}
 
 .piece-card__table {
   grid-area: table;

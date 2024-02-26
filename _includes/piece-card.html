@@ -1,14 +1,14 @@
 <article class="piece-card" id="piece-{{ piece.order }}">
   <div class="piece-card__top">
-    <div class="piece-card__age">
+    <p class="piece-card__age">
       {{ piece.age }}+
-    </div>
-    <time class="piece-card__year" datetime="{{ piece.year }}">
-      {{ piece.year }} год
-    </time>
+    </p>
+    <p class="piece-card__year">
+      <time>{{ piece.year }}</time> год
+    </p>
   </div>
   <header class="piece-card__header">
-    <h2 class="piece-card__title">{{ piece.title }}</h2>
+    <h2 class="piece-card__title" id="piece-{{ piece.order }}-title">{{ piece.title }}</h2>
     {%- if piece.subtitle %}
     <p class="piece-card__subtitle">{{ piece.subtitle }}</p>
     {%- endif %}
@@ -73,7 +73,8 @@
     <a  class="button link-reset piece-card__button"
         id="piece-{{ piece.order }}-button"
         href="{{ piece.button-link }}"
-        target="_blank">
+        target="_blank"
+        aria-describedby="piece-{{ piece.order }}-title">
       {%- if piece.button-text %}
         {{ piece.button-text }}
       {%- else %}
@@ -103,7 +104,7 @@
       {%- endif %}
 
       {%- if piece.year %}
-        "copyrightYear": "{{ piece.year }}",
+        "dateCreated": "{{ piece.year }}",
       {%- endif %}
       
       {%- if piece.age %}
