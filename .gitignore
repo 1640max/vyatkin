@@ -3,3 +3,5 @@ _site
 _drafts
 .jekyll-cache
 .sass-cache
+node_modules
+package-lock.json

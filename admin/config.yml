@@ -1,6 +1,20 @@
+---
+---
+{%- if jekyll.environment == "production" -%}
+
 backend:
   name: git-gateway
   branch: decapcms
+
+{%- else -%}
+
+local_backend: true
+backend:
+  name: proxy
+  proxy_url: http://192.168.0.141:8081/api/v1
+
+{%- endif %}
+
 media_folder: "assets/img"
 site_url: {{ site.url }}
 locale: ru
