@@ -30,6 +30,7 @@
   <script defer src="assets/js/highlightPiece.js"></script>
   <script defer src="assets/js/counter.js"></script>
   <script defer src="assets/js/unfold-description.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript"></script>
 
 </head>
 <body class="body">
@@ -52,5 +53,17 @@
     </footer>
   {%- endif %}
 
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  
 </body>
 </html>

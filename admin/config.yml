@@ -1,0 +1,9 @@
+backend:
+  name: git-gateway
+  branch: decapcms
+media_folder: "assets/img"
+site_url: {{ site.url }}
+locale: ru
+editor:
+  preview: false
+show_preview_links: false
