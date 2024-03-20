@@ -2,6 +2,9 @@
 layout: page
 header: false
 footer: false
+hero__photo: /assets/img/main.webp
+hero__heading: Меня зовут Пётр
+hero__tagline: Я пишу пьесы, ставлю спектакли и играю в театре
 ---
 
 <div class="fullscreen body__padding">
@@ -9,9 +12,9 @@ footer: false
     <h1 class="title fullscreen__title">{{ site.title }}</h1>
     <nav class="menu fullscreen__menu">{% include menu.html %}</nav>
     <main class="hero fullscreen__content">
-      <img class="hero__photo" src="assets/img/main.webp" alt="Пётр Вяткин">
-      <h2 class="hero__heading">Меня зовут<br>Пётр</h2>
-      <p class="hero__tagline">Я пишу пьесы, ставлю спектакли<br>и играю в театре</p>
+      <img class="hero__photo" src="{{ page.hero__photo }}" alt="{{ site.title }}">
+      <h2 class="hero__heading">{{ page.hero__heading }}</h2>
+      <p class="hero__tagline">{{ page.hero__tagline }}</p>
     </main>
   </div>
 </div>

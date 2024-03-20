@@ -21,3 +21,14 @@ locale: ru
 editor:
   preview: false
 show_preview_links: false
+collections:
+- name: pages
+  label: Текст на сайте
+  files:
+    - name: index
+      label: Главная
+      file: index.html
+      fields:
+        - { label: Фото, name: hero__photo, widget: file, allow_multiple: false}
+        - { label: Заголовок, name: hero__heading, widget: string }
+        - { label: Краткое описание, name: hero__tagline, widget: string }

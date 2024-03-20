@@ -15,11 +15,13 @@
 .hero__heading {
   font: 2.5rem/115% $heading-family;
   margin: 0 0 .5rem 0;
+  max-width: 8em;
 }
 
 .hero__tagline {
   font: 1.25rem/135% $default-family;
   margin: 0;
+  max-width: 18em
 }
 
 @media (min-width: $md) and (min-height: 700px) {
