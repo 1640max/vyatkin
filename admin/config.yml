@@ -38,3 +38,77 @@ collections:
       fields:
         - { label: Абзац 1, name: p1, widget: text }
         - { label: Абзац 2, name: p2, widget: text }
+    - name: pieces-data
+      label: Пьесы
+      file: _data/pieces.yml
+      fields:
+      - label: Пьесы
+        name: pieces
+        widget: "list"
+        add_to_top: true
+        summary: '{{fields.title}}'
+        fields:
+          - { label: Название, name: title, widget: string }
+          - { label: Подназвание, name: subtitle, widget: string, required: false }
+          -   label: Возраст
+              hint: Не рекомендуемый, а который по закону
+              name: age
+              widget: select
+              options:
+              - { label: 0+, value: "0" }
+              - { label: 6+, value: 6 }
+              - { label: 12+, value: 12 }
+              - { label: 16+, value: 16 }
+              - { label: 18+, value: 18 }
+          - { label: Год написания, name: year, widget: number, min: 2000, max: 3000 }
+          -   label: Какой по порядку написана пьеса
+              name: order
+              widget: number
+              min: 1
+              hint:
+                Количество пьес посмотри наверху,
+                скорее всего оно равно номеру новой пьесы
+          - { label: Количество персонажей, name: characters, widget: number, min: 0, required: false }
+          - { label: Описание, name: description, widget: text, required: false }
+          -   label: Файл с пьесой
+              name: button-link
+              widget: file
+              required: false
+              allow_multiple: false
+              media_folder: /assets/pieces/
+              hint: 
+                Загрузи файл с пьесой, либо вставь ссылку на спектакль,
+                если пьесу выкладывать нельзя
+          - { label: Заказчик, name: client, widget: string, required: false }
+          - { label: Ссылка на сайт заказчика, name: client-link, widget: string, required: false }
+          -   label: Регалии
+              name: rewards
+              widget: list
+              fields:
+              - label: Название регалии
+                name: name
+                widget: string
+                hint:
+                  Я бы убрал слова «двадцать пятый», «международный», «независимый» и т.д.
+                  Оставь только «Победитель конкурса драматургии «Исходное событие — XXI век» 2022».
+                  Подробности есть по ссылке, а тут нужна суть.
+              - label: Ссылка на пруф
+                name: link
+                widget: string
+                hint: Желательно сайт конкурса, а не соцсети
+          -   label: Постановки
+              name: productions
+              widget: list
+              fields:
+              - label: Название
+                name: name
+                widget: string
+                hint: >
+                  Обычно название театра и режиссёр.Можно название, если оно отличается от названия пьесы.
+                  Например:
+                    Театр Les Partisans, реж. Павел Зорин
+                    МХТ, «Двадцать третий год. Маяковка и окрестности»
+              - label: Ссылка
+                name: link
+                widget: string
+                hint: Желательно не соцсети

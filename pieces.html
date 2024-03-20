@@ -28,7 +28,7 @@ p2: Также пишу на заказ. Примеры таких работ �
 
   <!-- Не заказные + «Сунгирские охотники» -->
   <div class="piece-cards">
-  {%- for piece in site.data.pieces %}
+  {%- for piece in site.data.pieces.pieces %}
     {%- unless piece.client and piece.order != 15 %}
       {%- include piece-card.html piece=piece %}
     {% endunless %}

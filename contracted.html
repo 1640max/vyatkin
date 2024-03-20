@@ -30,7 +30,7 @@ title: Заказные пьесы
 
   <div class="piece-cards">
     <!-- Заказные минус «Сунгирские охотники» -->
-    {%- for piece in site.data.pieces %}
+    {%- for piece in site.data.pieces.pieces %}
       {%- if piece.client and piece.order != 15 %}
         {%- include piece-card.html piece=piece %}
       {% endif %}
