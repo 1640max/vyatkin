@@ -5,6 +5,10 @@
 backend:
   name: git-gateway
   branch: decapcms
+  commit_messages:
+    create: Create {{path}} by {{author-login}}
+    update: Update {{path}} by {{author-login}}
+    delete: Delete {{path}} by {{author-login}}
 
 {%- else -%}
 
@@ -21,19 +25,20 @@ locale: ru
 editor:
   preview: false
 show_preview_links: false
+search: false
 collections:
-- name: pages
-  label: Текст на сайте
+- name: content
+  label: Контент сайта
   files:
     - name: index
-      label: Главная
+      label: Страница «Главная»
       file: index.html
       fields:
         - { label: Фото, name: hero__photo, widget: file, allow_multiple: false}
         - { label: Заголовок, name: hero__heading, widget: string }
         - { label: Краткое описание, name: hero__tagline, widget: string }
     - name: pieces
-      label: Мои пьесы
+      label: Страница «Мои пьесы»
       file: pieces.html
       fields:
         - { label: Абзац 1, name: p1, widget: text }
@@ -84,6 +89,7 @@ collections:
           -   label: Регалии
               name: rewards
               widget: list
+              add_to_top: true
               fields:
               - label: Название регалии
                 name: name
@@ -99,12 +105,13 @@ collections:
           -   label: Постановки
               name: productions
               widget: list
+              add_to_top: true
               fields:
               - label: Название
                 name: name
                 widget: string
                 hint: >
-                  Обычно название театра и режиссёр.Можно название, если оно отличается от названия пьесы.
+                  Обычно название театра и режиссёр. Можно название, если оно отличается от названия пьесы.
                   Например:
                     Театр Les Partisans, реж. Павел Зорин
                     МХТ, «Двадцать третий год. Маяковка и окрестности»
