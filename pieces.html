@@ -1,15 +1,19 @@
 ---
 layout: page
 title: Пьесы
+p1: <a class="link" href="/contacts.html">Cообщите мне</a>, если захотите что-то
+  поставить — я заинтересован в постановках.
+p2: Также пишу на заказ. Примеры таких работ на странице с <a class="link"
+  href="/contracted.html">заказными пьесами</a>.
 ---
 
 <main class="text text__mt body__margin">
   <div class="text__text-block">
     <p class="text__paragraph">
-      <a class="link" href="/contacts.html">Cообщите мне</a>, если захотите что-то поставить — я заинтересован в постановках.
+      {{ page.p1 }}
     </p>
     <p class="text__paragraph">
-      Также пишу на заказ. Примеры таких работ на странице с <a class="link" href="/contracted.html">заказными пьесами</a>.
+      {{ page.p2 }}
     </p>
   </div>
 

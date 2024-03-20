@@ -32,3 +32,9 @@ collections:
         - { label: Фото, name: hero__photo, widget: file, allow_multiple: false}
         - { label: Заголовок, name: hero__heading, widget: string }
         - { label: Краткое описание, name: hero__tagline, widget: string }
+    - name: pieces
+      label: Мои пьесы
+      file: pieces.html
+      fields:
+        - { label: Абзац 1, name: p1, widget: text }
+        - { label: Абзац 2, name: p2, widget: text }
