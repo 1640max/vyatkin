@@ -4,7 +4,7 @@
 
 backend:
   name: git-gateway
-  branch: decapcms
+  branch: production
   commit_messages:
     create: Create {{path}} by {{author-login}}
     update: Update {{path}} by {{author-login}}
