@@ -1,10 +1,12 @@
 {% for menu-item in site.data.menu %}
   {%- if page.url == menu-item.path %}
     {%- unless page.url == "/" %}
-      <p class="menu__item menu__item_current">{{ menu-item.name }}</p>
+      <a  class="link-inverted menu__item menu__item_current"
+          href="{{ menu-item.path }}"
+          aria-current="page">{{ menu-item.name }}</a>
     {%- endunless %}
   {%- else %}
-    <a  href="{{ menu-item.path }}"
-        class="link-inverted menu__item">{{ menu-item.name }}</a>
+    <a  class="link-inverted menu__item"
+        href="{{ menu-item.path }}">{{ menu-item.name }}</a>
   {%- endif -%}
 {% endfor %}
