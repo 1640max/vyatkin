@@ -40,6 +40,10 @@
 
 .piece-card_highlighted {
   background-color: #ffa;
+
+  .piece-card__description_fold::after {
+    background-color: #ffa;
+  }
 }
 
 .piece-card__top {
@@ -98,19 +102,15 @@
   left: 0;
   width: 100%;
   height: 3rem;
-  background-image: linear-gradient(0, $grey 0%, #{$grey}bf 50%,#{$grey}#{0}#{0} 100%);
+
+  /* Здесь на серый блок накладывается градиентная маска. Это нужно, чтобы можно
+     было легко поменять цвет этого блока. А меняется он, когда блок
+     подсвечивается жёлтым в .piece-card_highlighted */
+
+  mask-image: linear-gradient(0, $grey 0%, #{$grey}bf 50%,#{$grey}#{0}#{0} 100%);
+  background-color: $grey;
+  transition: background-color 0.5s linear;
 }
-
-/* @media (min-width: $lg) {
-
-  .piece-card__description_fold {
-    max-height: none;
-  }
-
-  .piece-card__description_fold::after {
-    display: none;
-  }
-} */
 
 .piece-card__delimiter {
   grid-area: delimiter;
