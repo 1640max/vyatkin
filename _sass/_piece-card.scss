@@ -18,7 +18,8 @@
       "description"
       "delimiter"
       "table"
-      "button";
+      "button"
+      "copy";
   gap: 1rem 3rem;
   transition: background-color 0.5s linear;
   background-color: $grey;
@@ -28,9 +29,10 @@
   @media (min-width: $md) {
     grid-template-areas:
       "top          top"
-      "header      table"
+      "header       table"
       "description  table"
-      "button       table";
+      "button       table"
+      "copy         table";
     grid-auto-columns: 1fr;
     grid-template-rows: repeat(3, auto) 1fr;
   }
@@ -44,7 +46,7 @@
   grid-area: top;
   display: grid;
   grid-auto-flow: column;
-  color: #5E5E5E;
+  color: #5e5e5e;
   justify-content: space-between;
   margin-bottom: -.3rem;
 }
@@ -132,9 +134,41 @@
   grid-area: button;
   align-self: start;
   width: 100%;
+}
 
-  @media (min-width: $sm) and (max-width: $md), (min-width: $lg) {
+@media (min-width: $sm) and (max-width: $md), (min-width: $lg) {
+  
+  .piece-card__button {
     max-width: 20rem;
+  }
+
+  .piece-card__share {
+    text-align: left;
+  }
+}
+
+.piece-card__copy {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+
+  display: inline-flex;
+  align-items: center;
+  color: #5e5e5e;
+  position: relative;
+  font-size: .8rem;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: .25rem; /* Space between icon and text */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M138.434 198.664 35.637 301.438c-47.516 47.507-47.516 124.804 0 172.312l2.566 2.566C61.223 499.324 91.824 512 124.38 512s63.16-12.676 86.176-35.684l98.91-98.886a154.25 154.25 0 0 1-22.067 1.586c-20.503 0-40.382-4.04-58.734-11.735l-62.3 62.285c-11.216 11.211-26.126 17.387-41.985 17.387-15.856 0-30.766-6.172-41.98-17.383-11.2-11.195-17.368-26.101-17.368-41.976 0-15.871 6.168-30.781 17.364-41.977l100.23-100.203c11.215-11.215 26.125-17.387 41.984-17.387 15.336 0 29.774 5.786 40.852 16.305.402.328.789.676 1.164 1.05 5.55 5.548 12.926 8.602 20.773 8.602 7.844 0 15.223-3.054 20.77-8.601l22.441-22.434a121.795 121.795 0 0 0-17.257-21.719l-2.563-2.562c-23.02-23.016-53.625-35.688-86.176-35.688-32.554 0-63.16 12.672-86.18 35.684zm0 0" fill="%23000000" opacity="0.5" data-original="%23000000" class=""></path><path d="M476.367 210.563c22.98-22.97 35.633-53.567 35.633-86.157 0-32.586-12.656-63.183-35.633-86.156l-2.562-2.563C450.785 12.677 420.18 0 387.625 0c-32.55 0-63.156 12.676-86.176 35.688l-98.91 98.882a154.305 154.305 0 0 1 22.07-1.586c20.5 0 40.38 4.043 58.73 11.735l62.302-62.285c11.214-11.211 26.125-17.387 41.984-17.387s30.77 6.172 41.984 17.387c11.2 11.195 17.364 26.101 17.364 41.972 0 15.875-6.164 30.781-17.364 41.973L329.38 266.586c-11.215 11.215-26.125 17.387-41.984 17.387-15.332 0-29.77-5.786-40.848-16.305a14.692 14.692 0 0 1-1.168-1.05c-5.547-5.548-12.926-8.602-20.77-8.602-7.847 0-15.222 3.054-20.77 8.601l-22.44 22.438a121.85 121.85 0 0 0 17.253 21.715l2.567 2.566c23.02 23.012 53.62 35.684 86.176 35.684 32.554 0 63.16-12.672 86.175-35.684zm0 0" fill="%23000000" opacity="0.5" data-original="%23000000" class=""></path></g></svg>') no-repeat center center;
+    background-size: contain;
+    opacity: 0.5;
   }
 }
 
