@@ -150,6 +150,8 @@ pieces:
   - rewards:
       - name: Победитель конкурса новых комедий «Легкий жанр» — 2024
         link: https://comedy.nnov.ru/legkij-zhanr-2024/
+      - name: Лонг-лист конкурса драматургов «Евразия» 2024
+        link: https://www.kolyada-theatre.ru/evraziya?num=2024
     characters: 10
     client: null
     order: 16
