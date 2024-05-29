@@ -18,12 +18,14 @@
   </p>
   <div class="piece-card__delimiter"></div>
   <dl class="piece-card__table" role="list">
+    {% comment %}
     {%- if piece.button-link %}
       <div class="data data_inline">
         <dt class="data__key">Скачиваний:</dt>
         <dd class="data__value" id="piece-{{ piece.order }}-counter"></dd>
       </div>
     {%- endif %}
+    {% endcomment %}
     {%- if piece.characters %}
     <div class="data data_inline">
       <dt class="data__key">Персонажей:</dt>
