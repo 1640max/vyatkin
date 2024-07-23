@@ -13,9 +13,11 @@
     <p class="piece-card__subtitle">{{ piece.subtitle }}</p>
     {%- endif %}
   </header>
-  <p class="piece-card__description piece-card__description_fold">
-    {{ piece.description | newline_to_br | replace: '<br />', '<br>' }}
-  </p>
+  <div class="piece-card__description piece-card__description_fold">
+    <p class="piece-card__p">
+      {{ piece.description | rstrip | newline_to_br | replace: '<br />', '</p><p class="piece-card__p">' }}
+    </p>
+  </div>
   <div class="piece-card__delimiter"></div>
   <dl class="piece-card__table" role="list">
     {% comment %}

@@ -84,9 +84,6 @@
 
 .piece-card__description {
   grid-area: description;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0;
 }
 
 .piece-card__description_fold {
@@ -110,6 +107,16 @@
   mask-image: linear-gradient(0, $grey 0%, #{$grey}bf 50%,#{$grey}#{0}#{0} 100%);
   background-color: $grey;
   transition: background-color 0.5s linear;
+}
+
+.piece-card__p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 .5em;
+}
+
+.piece-card__p:last-child {
+  margin: 0
 }
 
 .piece-card__delimiter {
