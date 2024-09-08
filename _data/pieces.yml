@@ -1,5 +1,29 @@
 pieces:
   - rewards: null
+    characters: null
+    client: null
+    order: 22
+    button-link: https://ticketscloud.com/v1/widgets/common?token=eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNjI2N2MzYjhhNTU0MzVjYmY2ZDhkYzMyIn0.RxlealP-xQskyTfZrmwDni4NXflfPGnCFFsAJAL_NsA&lang=ru&event=66ccb09034cc90d12e330b45&s=1&r=1&org=6267c3b8a55435cbf6d8dc32&city=524901&category=592841f8515e35002dead95a&tags=62c036a0b490a2720d626c47%2C%D0%A7%D0%B8%D1%82%D0%BA%D0%B0
+    button-text: Зарегистрироваться на читку
+    subtitle: Пьеса для двоих о разводе и любви
+    title: С людьми внутри
+    client-link: null
+    description: >
+      Читка пьесы 11 сентября в 19:30 в Москве <a class="link" href="https://yandex.ru/maps/-/CDB1aG9Z">в саду Баумана</a>.
+
+      Надя и Рома разводятся. Жизнь прожита, заявление подано, месяц прошёл, настал день «икс» — им нужно вместе прийти в ЗАГС и забрать свидетельство о разводе.<br>
+      Либо нет.<br> 
+      Утро, Рома заехал за Надей, всё серьёзно, он настроен, строг, решение принято, сомнений нет, нужно идти.<br> 
+      Или нет.<br> 
+      Надя собрала свои вещи, готова съехать с Ромкиной комнаты в сталинке, готова освободиться от него, его соседей-друзей, готова порвать со всем Ромкиным, готова начать новую жизнь.<br> 
+      Или нет.<br>
+
+      Ситуация, конечно, невесёлая, а значит будет весело.
+      Весело понаблюдать за драматической борьбой, за рождением нового из ветхих руин старого в потрёпаной временем аварийной комнате в сталинке.
+      С людьми внутри.
+    year: 2024
+    age: 18
+  - rewards: null
     characters: 5
     client: null
     order: 21
