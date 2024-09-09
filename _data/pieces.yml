@@ -93,7 +93,9 @@ pieces:
     button-link: /assets/pieces/Едят%20ли%20ведьмы%20своих%20внуков%20Пётр%20Вяткин%202022.docx
     subtitle: Страшная комедия для детей и их родителей
     title: Едят ли ведьмы своих внуков?
-    productions: null
+    productions:
+      - name: Театральное Пространство Свободы, реж. Алексей Тетюев
+      - link: https://vk.com/event226141982
     client-link: null
     description: >
       Косте 10 лет. Он попадает в логово ведьмы. Мрачной старой волшебницы.
