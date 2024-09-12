@@ -27,8 +27,7 @@ pieces:
     characters: 5
     client: null
     order: 21
-    button-link: null
-    button-text: Скоро будет
+    button-link: /assets/pieces/Крокодил-каякер%20путешественник%20во%20времени%20Пётр%20Вяткин%202024.docx
     subtitle: Недетская комедия про говорящее пресмыкающееся
     title: Крокодил-каякер путешественник во времени
     client-link: null
