@@ -1,49 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Получаем кнопки сортировки, контейнер с пьесами и карточки пьес
-  var sortButtons = document.querySelectorAll('.sort-ui__item');
+  var buttonGroup = document.querySelector('.sort-ui__list');
   var cardsContainer = document.querySelector('.piece-cards');
   var cards = cardsContainer.querySelectorAll('.piece-card');
   
   // Обрабатываем клик на кнопку сортировки
-  sortButtons.forEach(item => item.addEventListener('click', sortClickHandler));
-
-  function sortClickHandler(event) {
-    // Если кнопка уже нажата, то ничего не делаем
-    if (event.target.classList.contains('sort-ui__item_selected')) {
-      return;
-    }
+  buttonGroup.addEventListener('change', sortChangeHandler);
+  function sortChangeHandler(event) {
   
     // fadeOut
     cardsContainer.style.opacity = 0;
   
-    // Убираем модификатор sort-ui__item_selected у всех элементов списка
-    sortButtons.forEach(item => item.classList.remove('sort-ui__item_selected'));
-  
-    // Добавляем модификатор sort-ui__item_selected к выбранному элементу списка
-    event.target.classList.add('sort-ui__item_selected');
-  
-    // Получаем id элемента, на котором был клик
-    var selectedSortId = event.target.id;
+    var sortType = event.target.value;
   
     setTimeout(function () {
       // Вызываем функцию сортировки и передаем выбранный id
-      sortCards(selectedSortId);
+      sortCards(sortType);
   
       // fadeIn
       cardsContainer.style.opacity = 1;
     }, 300);
   }
-  
-
+    
   // Функция сортировки карточек пьес
-  function sortCards(sortId) {
+  function sortCards(sortType) {
     // Преобразуем NodeList в массив
     var cardsArray = Array.from(cards);
 
     // Сортируем массив карточек в соответствии с выбором пользователя
     cardsArray.sort(function (a, b) {
-      var orderA = getOrderValue(a, sortId);
-      var orderB = getOrderValue(b, sortId);
+      var orderA = getOrderValue(a, sortType);
+      var orderB = getOrderValue(b, sortType);
 
       // Сравниваем значения для сортировки
       return orderA - orderB;
@@ -59,13 +46,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Функция получения значения для сортировки
-  function getOrderValue(card, sortId) {
-    switch (sortId) {
-      case 'sort-new':
+  function getOrderValue(card, sortType) {
+    switch (sortType) {
+      case 'new':
         return parseInt(card.dataset.pieceOrder) * -1;
-      case 'sort-old':
+      case 'old':
         return parseInt(card.dataset.pieceOrder);
-      case 'sort-popular':
+      case 'popular':
         return parseInt(card.dataset.piecePopularity) * -1;
     }
   }

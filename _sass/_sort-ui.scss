@@ -17,11 +17,10 @@
   @extend .list-reset;
   display: flex;
   gap: 1rem;
-  margin: 0 0 0 1rem;
+  margin: .2rem 0 0 1rem;
 }
 
 .sort-ui__item {
-  display: block;
   list-style-type: none;
   text-decoration: underline dashed;
   color: $red;
@@ -29,11 +28,6 @@
   border: 0;
   background: 0;
   font: inherit;
-  padding: 0;;
-}
-
-.sort-ui__item_selected {
-  text-decoration: none;
-  color: $black;
-  cursor: auto;
+  padding: 0;
+  accent-color: #de4121;
 }

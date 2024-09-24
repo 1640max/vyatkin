@@ -19,11 +19,17 @@ p2: Также пишу на заказ. Примеры таких работ �
 
   <div class="sort-ui text__sort" aria-label="Сортировка">
     <p class="sort-ui__heading">Показать сначала:</p>
-    <ul class="sort-ui__list" role="list">
-      <li><button class="sort-ui__item" id="sort-new">новые</button></li>
-      <li><button class="sort-ui__item" id="sort-old">старые</button></li>
-      <li><button class="sort-ui__item" id="sort-popular">популярные</button></li>
-    </ul>
+    <div class="sort-ui__list" role="radiogroup" aria-labelledby="sort-heading">
+      <label>
+        <input class="sort-ui__item" type="radio" name="sort" value="new">новые
+      </label>
+      <label>
+        <input class="sort-ui__item" type="radio" name="sort" value="old">старые
+      </label>
+      <label>
+        <input class="sort-ui__item" type="radio" name="sort" value="popular">популярные
+      </label>
+    </div>
   </div>
 
   <!-- Не заказные + «Сунгирские охотники» -->
