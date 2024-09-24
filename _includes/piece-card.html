@@ -1,4 +1,7 @@
-<article class="piece-card" id="piece-{{ piece.order }}">
+<article class="piece-card"
+         id="piece-{{ piece.order }}"
+         data-piece-order="{{ piece.order }}"
+         data-piece-popularity="{{ piece.rewards.size | plus: piece.productions.size }}">
   <div class="piece-card__top">
     <p class="piece-card__age">
       {{ piece.age }}+
@@ -95,8 +98,6 @@
     </div>
   {%- endif %}
   <button class="piece-card__copy">Копировать ссылку</button>
-  <div class="piece-card__hidden piece-card__order">{{ piece.order }}</div>
-  <div class="piece-card__hidden piece-card__popularity">{{ piece.rewards.size | plus: piece.productions.size }}</div>
 
   <script type="application/ld+json">
     {

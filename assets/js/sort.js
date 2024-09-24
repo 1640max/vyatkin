@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   sortButtons.forEach(item => item.addEventListener('click', sortClickHandler));
 
   function sortClickHandler(event) {
-    // Если сортировка уже выбрана, то ничего не делаем
+    // Если кнопка уже нажата, то ничего не делаем
     if (event.target.classList.contains('sort-ui__item_selected')) {
       return;
     }
@@ -62,11 +62,11 @@ document.addEventListener('DOMContentLoaded', function () {
   function getOrderValue(card, sortId) {
     switch (sortId) {
       case 'sort-new':
-        return parseInt(card.querySelector('.piece-card__order').textContent) * -1;
+        return parseInt(card.dataset.pieceOrder) * -1;
       case 'sort-old':
-        return parseInt(card.querySelector('.piece-card__order').textContent);
+        return parseInt(card.dataset.pieceOrder);
       case 'sort-popular':
-        return parseInt(card.querySelector('.piece-card__popularity').textContent) * -1;
+        return parseInt(card.dataset.piecePopularity) * -1;
     }
   }
 });
