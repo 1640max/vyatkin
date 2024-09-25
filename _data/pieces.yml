@@ -69,7 +69,7 @@ pieces:
     button-link: /assets/pieces/Едят%20ли%20ведьмы%20своих%20внуков%20Пётр%20Вяткин%202022.docx
     subtitle: Страшная комедия для детей и их родителей
     title: Едят ли ведьмы своих внуков?
-    tags: ["Для детей и подростков"]
+    tags: ["для детей и подростков"]
     productions:
       - name: Театральное Пространство Свободы, реж. Алексей Тетюев
         link: https://vk.com/event226141982
@@ -116,7 +116,7 @@ pieces:
     button-link: https://mobiletheater.io/#:~:text=%D0%A2%D0%90%D0%99%D0%9D%D0%90%20%D0%9D%D0%90%D0%A3%D0%A2%D0%98%D0%9B%D0%A3%D0%A1%D0%90
     subtitle: Приключенческий спектакль для прослушивания в океанариуме
     title: Двадцать тысяч льё под водой
-    tags: ["Коммерческие"]
+    tags: ["коммерческие"]
     productions:
       - name: «Тайна Наутилуса», МХТ, реж. П. Вяткин
         link: https://oteatre.info/tajna-nautilusa/
@@ -131,7 +131,7 @@ pieces:
     button-link: null
     subtitle: Аудиоспектакль для последнего троллейбуса
     title: Троллейбус желаний
-    tags: ["Коммерческие"]
+    tags: ["коммерческие"]
     productions:
       - name: Музей Транспорта Москвы
         link: https://web.archive.org/web/20230924081112/https://mtmuseum.com/page24297285.html
@@ -153,7 +153,7 @@ pieces:
     button-link: /assets/pieces/Сунгирские%20охотники%20Пётр%20Вяткин%202023.docx
     subtitle: Мамонтовая комедия для детей и их родителей
     title: Сунгирские охотники
-    tags: ["Для детей и подростков"]
+    tags: ["для детей и подростков"]
     productions:
       - name: МИРА Центр, реж. П. Вяткин
         link: https://myra.ru/sungir
@@ -201,7 +201,7 @@ pieces:
     button-link: null
     subtitle: Комедийная монодрама для аудио-гастрономического ивента
     title: Приятного аппетита, Земляне!
-    tags: ["Коммерческие"]
+    tags: ["коммерческие"]
     productions: null
     client-link: null
     description: null
@@ -218,7 +218,7 @@ pieces:
     button-link: /assets/pieces/Дачный%20дроид%20Пётр%20Вяткин%202022.docx
     subtitle: Комедийная монодрама для опытного актёра и робопса
     title: Дачный дроид
-    tags: ["Коммерческие"]
+    tags: ["коммерческие"]
     productions: null
     client-link: null
     description: >
@@ -273,7 +273,7 @@ pieces:
     button-link: https://mobiletheater.io/#:~:text=ДВАДЦАТЬ%20ТРЕТИЙ%20ГОД
     subtitle: Пьеса-променад для прогулки по Москве 2023 и 1923 годов.
     title: Двадцать третий год
-    tags: ["Коммерческие"]
+    tags: ["коммерческие"]
     productions:
       - name: МХТ, «Двадцать третий год. Маяковка и окрестности»
         link: https://oteatre.info/volkostrelov-i-artisty-mayakovki/
@@ -290,7 +290,7 @@ pieces:
     button-link: /assets/pieces/Динозавры%20Москвы%20и%20Московской%20области%20Пётр%20Вяткин%202020.docx
     subtitle: Пьеса для теневого спектакля-комикса
     title: Динозавры Москвы и Московской области
-    tags: ["Для детей и подростков", "Палеопьеса"]
+    tags: ["для детей и подростков", "палеопьесы"]
     productions:
       - name: Театр им. Алехандро Валенсио, реж. П. Вяткин
         link: https://valensio.com/dino
@@ -307,7 +307,7 @@ pieces:
     button-link: /assets/pieces/Пермь в пермь Пётр Вяткин 2024.docx
     subtitle: Палеокомедия про звероящеров для детей и их родителей
     title: Пермь в пермь
-    tags: ["Для детей и подростков", "Палеопьеса"]
+    tags: ["для детей и подростков", "палеопьесы"]
     client-link: null
     description: >
       Лёня Рогов и Володя Очёрский подружились.
@@ -346,7 +346,7 @@ pieces:
     button-link: /assets/pieces/Любознательные%20человечки%20Пётр%20Вяткин%202023.docx
     subtitle: Беспросветная комедия про каменный век
     title: Любознательные человечки
-    tags: ["Палеопьеса"]
+    tags: ["палеопьесы"]
     productions: null
     client-link: null
     description: >
@@ -462,7 +462,7 @@ pieces:
     button-link: null
     subtitle: Волшебная драма для спектакля бродилки
     title: Тайна старого дома
-    tags: ["Коммерческие"]
+    tags: ["коммерческие"]
     productions:
       - name: «Тайна старого дома», ЦТМ, реж. А. Никитина, И. Хуснуллин
         link: https://ctm-nn.ru/repertuar/%D1%82%D0%B0%D0%B9%D0%BD%D0%B0-%D1%81%D1%82%D0%B0%D1%80%D0%BE%D0%B3%D0%BE-%D0%B4%D0%BE%D0%BC%D0%B0/

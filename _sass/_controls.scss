@@ -16,8 +16,13 @@
 .controls__list {
   @extend .list-reset;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: .3rem 1rem;
   margin: .2rem 0 0 1rem;
+
+  @media (min-width: 390px) {
+    flex-direction: row;
+  }
 }
 
 .controls__item {

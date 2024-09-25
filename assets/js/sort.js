@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Получаем кнопки сортировки, контейнер с пьесами и карточки пьес
-  var buttonGroup = document.querySelector('#sort .controls__list');
+  var sortButtonGroup = document.querySelector('#sort .controls__list');
   var cardsContainer = document.querySelector('.piece-cards');
   var cards = cardsContainer.querySelectorAll('.piece-card');
   
   // Обрабатываем клик на кнопку сортировки
-  buttonGroup.addEventListener('change', sortChangeHandler);
+  sortButtonGroup.addEventListener('change', sortChangeHandler);
   function sortChangeHandler(event) {
   
     // fadeOut
     cardsContainer.style.opacity = 0;
   
-    var sortType = event.target.value;
+    const sortType = event.target.value;
   
     setTimeout(function () {
       // Вызываем функцию сортировки и передаем выбранный id

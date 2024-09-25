@@ -1,7 +1,8 @@
 <article class="piece-card"
          id="piece-{{ piece.order }}"
          data-piece-order="{{ piece.order }}"
-         data-piece-popularity="{{ piece.rewards.size | plus: piece.productions.size }}">
+         data-piece-popularity="{{ piece.rewards.size | plus: piece.productions.size }}"
+         data-piece-tags="{{ piece.tags | join: ', ' }}">
   <div class="piece-card__top">
     <p class="piece-card__age">
       {{ piece.age }}+
