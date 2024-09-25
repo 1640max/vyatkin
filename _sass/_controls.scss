@@ -1,26 +1,26 @@
-.sort-ui {
+.controls {
   display: flex;
   flex-direction: column;
 }
 
-.sort-ui__self {
+.controls__self {
   margin-top: 2.5rem;
   margin-bottom: 2rem;
 }
 
-.sort-ui__heading {
+.controls__heading {
   font-weight: 600;
   margin: 0;
 }
 
-.sort-ui__list {
+.controls__list {
   @extend .list-reset;
   display: flex;
   gap: 1rem;
   margin: .2rem 0 0 1rem;
 }
 
-.sort-ui__item {
+.controls__item {
   list-style-type: none;
   text-decoration: underline dashed;
   color: $red;

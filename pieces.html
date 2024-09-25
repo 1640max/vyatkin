@@ -8,6 +8,7 @@ p2: Также пишу на заказ. Примеры таких работ �
 ---
 
 <main class="text text__mt body__margin">
+
   <div class="text__text-block">
     <p class="text__paragraph">
       {{ page.p1 }}
@@ -17,20 +18,38 @@ p2: Также пишу на заказ. Примеры таких работ �
     </p>
   </div>
 
-  <div class="sort-ui text__sort" aria-label="Сортировка">
-    <p class="sort-ui__heading">Показать сначала:</p>
-    <div class="sort-ui__list" role="radiogroup" aria-labelledby="sort-heading">
+  <div class="controls text__sort" id="filter" aria-label="Фильтрация">
+    <p class="controls__heading">Показать только:</p>
+    <div class="controls__list" role="group">
       <label>
-        <input class="sort-ui__item" type="radio" name="sort" value="new">новые
+        <input class="controls__item" type="checkbox" name="filter" value="Для детей и подростков">
+        для детей и подростков
       </label>
       <label>
-        <input class="sort-ui__item" type="radio" name="sort" value="old">старые
-      </label>
-      <label>
-        <input class="sort-ui__item" type="radio" name="sort" value="popular">популярные
+        <input class="controls__item" type="checkbox" name="filter" value="Палеопьесы">
+        палеопьесы
       </label>
     </div>
   </div>
+
+  <div class="controls text__sort" id="sort" aria-label="Сортировка">
+    <p class="controls__heading">Сначала:</p>
+    <div class="controls__list" role="radiogroup">
+      <label>
+        <input class="controls__item" type="radio" name="sort" value="new">
+        новые
+      </label>
+      <label>
+        <input class="controls__item" type="radio" name="sort" value="old">
+        старые
+      </label>
+      <label>
+        <input class="controls__item" type="radio" name="sort" value="popular">
+        популярные
+      </label>
+    </div>
+  </div>
+
 
   <!-- Не заказные + «Сунгирские охотники» -->
   <div class="piece-cards">

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Получаем кнопки сортировки, контейнер с пьесами и карточки пьес
-  var buttonGroup = document.querySelector('.sort-ui__list');
+  var buttonGroup = document.querySelector('#sort .controls__list');
   var cardsContainer = document.querySelector('.piece-cards');
   var cards = cardsContainer.querySelectorAll('.piece-card');
   
