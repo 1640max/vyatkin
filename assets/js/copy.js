@@ -4,7 +4,7 @@ document.querySelectorAll('.piece-card__copy').forEach(button => {
       const pieceCard = this.closest('.piece-card');
       const pieceId = pieceCard.id;
       // Создаем якорную ссылку
-      const anchorLink = `${window.location.href.split('#')[0]}#${pieceId}`;
+      const anchorLink = `${window.location.origin}${window.location.pathname}#${pieceId}`;
 
       // Копируем якорную ссылку в буфер обмена
       navigator.clipboard.writeText(anchorLink).then(() => {
