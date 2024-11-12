@@ -1,4 +1,27 @@
 pieces:
+  - rewards:
+      - name: Шорт-лист конкурса драматургов «Евразия» 2023
+        link: https://www.kolyada-theatre.ru/news/obyavleny-long-list-i-short-list-xxi-mezhdunarodnogo-konkursa-dramaturgov-evraziya
+    characters: 17
+    client: null
+    order: 14
+    button-link: /assets/pieces/Любознательные%20человечки%20Пётр%20Вяткин%202023.docx
+    subtitle: Беспросветная комедия про каменный век
+    title: Любознательные человечки
+    tags: ["палеопьесы"]
+    productions: null
+    client-link: null
+    description: >
+      Главный герой — обычный охотник-собиратель — кое-что собрал на охоте.
+      Находка внезапная и загадочная.
+
+      То, что он принесёт в свою пещеру, навсегда изменит жизнь всего племени. И не только племени.
+
+      Я надеюсь, изменится и жизнь всей планеты.
+
+      Нашей.
+    year: 2023
+    age: 16
   - rewards: null
     characters: 2
     client: null
@@ -337,29 +360,6 @@ pieces:
       Весёлая история про вражду и про дружбу наших предков звероящеров, живших в пригороде Перми аж за 27 миллионов лет до появления первых динозавров.
     year: 2024
     age: 6
-  - rewards:
-      - name: Шорт-лист конкурса драматургов «Евразия» 2023
-        link: https://www.kolyada-theatre.ru/news/obyavleny-long-list-i-short-list-xxi-mezhdunarodnogo-konkursa-dramaturgov-evraziya
-    characters: 17
-    client: null
-    order: 14
-    button-link: /assets/pieces/Любознательные%20человечки%20Пётр%20Вяткин%202023.docx
-    subtitle: Беспросветная комедия про каменный век
-    title: Любознательные человечки
-    tags: ["палеопьесы"]
-    productions: null
-    client-link: null
-    description: >
-      Главный герой — обычный охотник-собиратель — кое-что собрал на охоте.
-      Находка внезапная и загадочная.
-
-      То, что он принесёт в свою пещеру, навсегда изменит жизнь всего племени. И не только племени.
-
-      Я надеюсь, изменится и жизнь всей планеты.
-
-      Нашей.
-    year: 2023
-    age: 16
   - rewards: null
     characters: 8
     client: null
