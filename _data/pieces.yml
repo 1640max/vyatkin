@@ -54,7 +54,7 @@ pieces:
         link: https://svoy.ompural.ru/dramcontest.php?year=2023
       - name: Особо отмеченная на «Любимовке-2022»
         link: https://lubimovka.art/library?festival=2022&program=3
-    publications:
+    other:
       - name: Журнал «Драмтеатр» № 7. 2022. стр. 84
         link: https://dramteatr-zhurnal.ru/about/#book7_84
     characters: 2
@@ -167,7 +167,7 @@ pieces:
         link: https://remarka-drama.ru/plays#2024
       - name: Лонг-лист конкурса современной драматургии «Молодые люди» 2023
         link: https://www.domaktera.ru/short-i-long-list-konkursa-sovremennoy-dramaturgii-dlya-detey-i-podrostkov-molodye-lyudi..html
-    publications:
+    other:
       - name: Cборник пьес «Молодые люди» 2023
         link: https://vk.com/wall-172051295_369
     characters: 3
@@ -202,6 +202,13 @@ pieces:
         link: https://comedy.nnov.ru/legkij-zhanr-2024/
       - name: Лонг-лист конкурса драматургов «Евразия» 2024
         link: https://www.kolyada-theatre.ru/evraziya?num=2024
+    other:
+      - name: Павел Руднев о пьесе
+        link: https://vk.com/wall897283_19881
+      - name: Читка в МХТ им. Чехова
+        link: https://vk.com/wall-41059_208394
+      - name: Читка в театре «Комедiя»
+        link: https://vk.com/wall-2486849_19900
     characters: 10
     client: null
     order: 16
