@@ -22,7 +22,9 @@ pieces:
       Нашей.
     year: 2023
     age: 16
-  - rewards: null
+  - rewards:
+      - name: Лонг-лист конкурса «ВнеDramЫ»
+      - link: https://vk.com/wall-223664011_1907
     characters: 2
     client: null
     order: 22
