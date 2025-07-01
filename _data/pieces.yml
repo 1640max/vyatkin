@@ -48,7 +48,7 @@ pieces:
     year: 2024
     age: 18
   - rewards:
-      - name: Победитель конкурса драматургов «Евразия 2022»
+      - name: Победитель конкурса драматургов «Евразия-2022»
         link: https://www.kolyada-theatre.ru/news/obyyavlen-spisok-pobediteley-xx-mezhdunarodnogo-konkursa-dramaturgov-evraziya-2022
       - name: Победитель конкурса по поддержке современной драматургии 2022
         link: https://konkurs.rcfoundation.ru/public/application/item?id=a096980e-e6db-4aa2-883d-639733c2e1b2&ysclid=lr69e4udm4637290333
@@ -204,7 +204,7 @@ pieces:
     year: 2023
     age: 6
   - rewards:
-      - name: Победитель конкурса новых комедий «Легкий жанр» — 2024
+      - name: Победитель конкурса новых комедий «Легкий жанр» 2024
         link: https://comedy.nnov.ru/legkij-zhanr-2024/
       - name: Лонг-лист конкурса драматургов «Евразия» 2024
         link: https://www.kolyada-theatre.ru/evraziya?num=2024
