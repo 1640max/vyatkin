@@ -1,4 +1,36 @@
 pieces:
+  - rewards:
+      - name: Победитель конкурса драматургов «Евразия-2022»
+        link: https://www.kolyada-theatre.ru/news/obyyavlen-spisok-pobediteley-xx-mezhdunarodnogo-konkursa-dramaturgov-evraziya-2022
+      - name: Победитель конкурса по поддержке современной драматургии 2022
+        link: https://konkurs.rcfoundation.ru/public/application/item?id=a096980e-e6db-4aa2-883d-639733c2e1b2&ysclid=lr69e4udm4637290333
+      - name: Победитель конкурса драматургии «Исходное событие — XXI век» — 2022
+        link: https://isobytie.tilda.ws/2022#rec199335944
+      - name: Лонг-лист драматического конкурса «СВОЙ» 2023
+        link: https://svoy.ompural.ru/dramcontest.php?year=2023
+      - name: Особо отмеченная на «Любимовке-2022»
+        link: https://lubimovka.art/library?festival=2022&program=3
+    other:
+      - name: Журнал «Драмтеатр» № 7. 2022. стр. 84
+        link: https://dramteatr-zhurnal.ru/about/#book7_84
+    characters: 2
+    client: null
+    order: 7
+    button-link: /assets/pieces/Лучший%20горох%20в%20городе%20Пётр%20Вяткин%202021.docx
+    subtitle: Нежная комедия про наших матерей
+    title: Лучший горох в городе
+    productions:
+      - name: Театр Les Partisans, реж. Павел Зорин
+        link: https://uralcult.ru/hronika-festivalya-laquo-kolyada-plays-raquo-157304
+      - name: Театр им. Алехандро Валенсио, реж. П. Вяткин
+        link: https://valensio.com/peas
+    client-link: null
+    description: >
+      В этой пьесе взрослый мужчина будет по телефонной связи 60 минут слушать
+      мать. И если это не глубинная метафора жизни всего моего поколения,
+      то я просто не знаю, что может быть глубже.
+    year: 2021
+    age: 16
   - characters: 5
     client: null
     order: 25
@@ -25,6 +57,37 @@ pieces:
       Или полезными?
     year: 2025
     age: 18
+  - rewards:
+      - name: Победитель конкурса новых комедий «Легкий жанр» 2024
+        link: https://comedy.nnov.ru/legkij-zhanr-2024/
+      - name: Лонг-лист конкурса драматургов «Евразия» 2024
+        link: https://www.kolyada-theatre.ru/evraziya?num=2024
+      - name: Лонг-лист конкурса «Большая Ремарка» 2025
+        link: https://vk.com/remarka_drama?w=wall-49351988_783
+    other:
+      - name: Павел Руднев о пьесе
+        link: https://vk.com/wall897283_19881
+      - name: Читка в МХТ им. Чехова
+        link: https://vk.com/wall-41059_208394
+      - name: Читка в театре «Комедiя»
+        link: https://vk.com/wall-2486849_19900
+      - name: Читка в «Пятом театре» в Омске
+        link: https://omskzdes.ru/culture/87830.html
+    characters: 10
+    client: null
+    order: 16
+    button-link: /assets/pieces/Одноместная%20канава%20Пётр%20Вяткин%202023.docx
+    subtitle: Трагикомедия про острую необходимость немножко полежать в канаве
+    title: Одноместная канава
+    productions: null
+    client-link: null
+    description: >
+      Виктор Груз лёг в канаву у дороги. Зачем? Когда он из неё вылезет? Что его
+      заставило так себя вести? Это всё очень интересует его невесту, его отца,
+      его соседку, его товарища по рабочей борьбе, его повара с работы, его
+      коллектора, его сестру, его начальника и даже местного новостного блогера.
+    year: 2023
+    age: 16
   - characters: 10
     client: null
     order: 24
@@ -51,6 +114,47 @@ pieces:
       Трогательная пубертано-подростковая комедия, написанная каким-то образом совсем без мата, про любовь и борьбу.
     year: 2025
     age: 16
+  - rewards:
+      - name: Победитель в лаборатории ПЬесочница фестиваля Б'ART'O 2022
+        link: https://vk.com/@-207679976-pobediteli-festivalya-barto-2022
+      - name: Шорт-лист конкурса «Маленькая ремарка» 2023
+        link: https://remarka-drama.ru/plays#2023
+      - name: Шорт-лист конкурса «Читаем новую пьесу» 2023
+        link: http://teatr-koleso.ru/news/novosti_438.html
+      - name: Шорт-лист конкурса драматургов «Евразия» 2023
+        link: https://www.kolyada-theatre.ru/news/obyavleny-long-list-i-short-list-xxi-mezhdunarodnogo-konkursa-dramaturgov-evraziya
+      - name: Особо отмеченная на «Любимовке-2023»
+        link: https://lubimovka.art/library?festival=2023&program=3
+    characters: 8
+    client: null
+    order: 12
+    button-link: /assets/pieces/Едят%20ли%20ведьмы%20своих%20внуков%20Пётр%20Вяткин%202022.docx
+    subtitle: Страшная комедия для детей и их родителей
+    title: Едят ли ведьмы своих внуков?
+    tags: ["для детей и подростков"]
+    productions:
+      - name: Театральное Пространство Свободы, реж. Алексей Тетюев
+        link: https://vk.com/event226141982
+      - name: Театр кукол им. А.К. Брахмана, реж. Алексей Бурдыко
+        link: https://vk.com/teatrkukol22?w=wall-215917194_685
+    client-link: null
+    description: >
+      Косте 10 лет. Он попадает в логово ведьмы. Мрачной старой волшебницы.
+      Страшной злой колдуньи.
+
+      В общем, Костя приехал к своей бабушке погостить.
+
+      Ведьма будет творить свою чёрную магию: колдовать, ворожить и наводить разнообразные порчи.
+
+      А Костя откажется в это верить.
+
+      И вот тут, кажется, между ними может наклюнуться некий конфликт.
+
+      Конфликт 10-летнего беззащитного мальчика и древней злющей ведьмы.
+
+      Рекомендуется к просмотру бабушкам с внуками.
+    year: 2022
+    age: 6
   - characters: 3
     client: null
     order: 23
@@ -121,79 +225,6 @@ pieces:
       С людьми внутри.
     year: 2024
     age: 18
-  - rewards:
-      - name: Победитель конкурса драматургов «Евразия-2022»
-        link: https://www.kolyada-theatre.ru/news/obyyavlen-spisok-pobediteley-xx-mezhdunarodnogo-konkursa-dramaturgov-evraziya-2022
-      - name: Победитель конкурса по поддержке современной драматургии 2022
-        link: https://konkurs.rcfoundation.ru/public/application/item?id=a096980e-e6db-4aa2-883d-639733c2e1b2&ysclid=lr69e4udm4637290333
-      - name: Победитель конкурса драматургии «Исходное событие — XXI век» — 2022
-        link: https://isobytie.tilda.ws/2022#rec199335944
-      - name: Лонг-лист драматического конкурса «СВОЙ» 2023
-        link: https://svoy.ompural.ru/dramcontest.php?year=2023
-      - name: Особо отмеченная на «Любимовке-2022»
-        link: https://lubimovka.art/library?festival=2022&program=3
-    other:
-      - name: Журнал «Драмтеатр» № 7. 2022. стр. 84
-        link: https://dramteatr-zhurnal.ru/about/#book7_84
-    characters: 2
-    client: null
-    order: 7
-    button-link: /assets/pieces/Лучший%20горох%20в%20городе%20Пётр%20Вяткин%202021.docx
-    subtitle: Нежная комедия про наших матерей
-    title: Лучший горох в городе
-    productions:
-      - name: Театр Les Partisans, реж. Павел Зорин
-        link: https://uralcult.ru/hronika-festivalya-laquo-kolyada-plays-raquo-157304
-      - name: Театр им. Алехандро Валенсио, реж. П. Вяткин
-        link: https://valensio.com/peas
-    client-link: null
-    description: >
-      В этой пьесе взрослый мужчина будет по телефонной связи 60 минут слушать
-      мать. И если это не глубинная метафора жизни всего моего поколения,
-      то я просто не знаю, что может быть глубже.
-    year: 2021
-    age: 16
-  - rewards:
-      - name: Победитель в лаборатории ПЬесочница фестиваля Б'ART'O 2022
-        link: https://vk.com/@-207679976-pobediteli-festivalya-barto-2022
-      - name: Шорт-лист конкурса «Маленькая ремарка» 2023
-        link: https://remarka-drama.ru/plays#2023
-      - name: Шорт-лист конкурса «Читаем новую пьесу» 2023
-        link: http://teatr-koleso.ru/news/novosti_438.html
-      - name: Шорт-лист конкурса драматургов «Евразия» 2023
-        link: https://www.kolyada-theatre.ru/news/obyavleny-long-list-i-short-list-xxi-mezhdunarodnogo-konkursa-dramaturgov-evraziya
-      - name: Особо отмеченная на «Любимовке-2023»
-        link: https://lubimovka.art/library?festival=2023&program=3
-    characters: 8
-    client: null
-    order: 12
-    button-link: /assets/pieces/Едят%20ли%20ведьмы%20своих%20внуков%20Пётр%20Вяткин%202022.docx
-    subtitle: Страшная комедия для детей и их родителей
-    title: Едят ли ведьмы своих внуков?
-    tags: ["для детей и подростков"]
-    productions:
-      - name: Театральное Пространство Свободы, реж. Алексей Тетюев
-        link: https://vk.com/event226141982
-      - name: Театр кукол им. А.К. Брахмана, реж. Алексей Бурдыко
-        link: https://vk.com/teatrkukol22?w=wall-215917194_685
-    client-link: null
-    description: >
-      Косте 10 лет. Он попадает в логово ведьмы. Мрачной старой волшебницы.
-      Страшной злой колдуньи.
-
-      В общем, Костя приехал к своей бабушке погостить.
-
-      Ведьма будет творить свою чёрную магию: колдовать, ворожить и наводить разнообразные порчи.
-
-      А Костя откажется в это верить.
-
-      И вот тут, кажется, между ними может наклюнуться некий конфликт.
-
-      Конфликт 10-летнего беззащитного мальчика и древней злющей ведьмы.
-
-      Рекомендуется к просмотру бабушкам с внуками.
-    year: 2022
-    age: 6
   - rewards: null
     characters: 3
     client: null
@@ -277,37 +308,6 @@ pieces:
       P.S. В конце концов всё будет нормально, но согласитесь, звучит волнительно!
     year: 2023
     age: 6
-  - rewards:
-      - name: Победитель конкурса новых комедий «Легкий жанр» 2024
-        link: https://comedy.nnov.ru/legkij-zhanr-2024/
-      - name: Лонг-лист конкурса драматургов «Евразия» 2024
-        link: https://www.kolyada-theatre.ru/evraziya?num=2024
-      - name: Лонг-лист конкурса «Большая Ремарка» 2025
-        link: https://vk.com/remarka_drama?w=wall-49351988_783
-    other:
-      - name: Павел Руднев о пьесе
-        link: https://vk.com/wall897283_19881
-      - name: Читка в МХТ им. Чехова
-        link: https://vk.com/wall-41059_208394
-      - name: Читка в театре «Комедiя»
-        link: https://vk.com/wall-2486849_19900
-      - name: Читка в «Пятом театре» в Омске
-        link: https://omskzdes.ru/culture/87830.html
-    characters: 10
-    client: null
-    order: 16
-    button-link: /assets/pieces/Одноместная%20канава%20Пётр%20Вяткин%202023.docx
-    subtitle: Трагикомедия про острую необходимость немножко полежать в канаве
-    title: Одноместная канава
-    productions: null
-    client-link: null
-    description: >
-      Виктор Груз лёг в канаву у дороги. Зачем? Когда он из неё вылезет? Что его
-      заставило так себя вести? Это всё очень интересует его невесту, его отца,
-      его соседку, его товарища по рабочей борьбе, его повара с работы, его
-      коллектора, его сестру, его начальника и даже местного новостного блогера.
-    year: 2023
-    age: 16
   - rewards: null
     characters: null
     client: Яндекс Go
