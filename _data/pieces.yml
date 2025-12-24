@@ -79,7 +79,9 @@ pieces:
     button-link: /assets/pieces/Одноместная%20канава%20Пётр%20Вяткин%202023.docx
     subtitle: Трагикомедия про острую необходимость немножко полежать в канаве
     title: Одноместная канава
-    productions: null
+    productions: 
+      - name: Театр им. Алехандро Валенсио, реж. П. Вяткин
+        link: https://valensio.com/single-ditch
     client-link: null
     description: >
       Виктор Груз лёг в канаву у дороги. Зачем? Когда он из неё вылезет? Что его
